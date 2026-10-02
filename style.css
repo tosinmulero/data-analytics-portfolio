@@ -1010,3 +1010,158 @@ header {
 
 }
 
+
+/* ==========================================
+   FINAL ACCESSIBILITY PASS
+   ========================================== */
+
+.skip-link {
+    position: fixed;
+    top: -60px;
+    left: 20px;
+    z-index: 9999;
+    background: #003087;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 0 0 8px 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+button {
+    touch-action: manipulation;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+    overflow-wrap: break-word;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+
+/* Better mobile project layout */
+
+@media (max-width: 768px) {
+
+    .projects-grid,
+    .skills-categories,
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-btn {
+        width: min(100%, 280px);
+        text-align: center;
+    }
+
+}
+
+
+/* Extra-small phones */
+
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .profile-photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .project-card,
+    .skill-category,
+    .about-card {
+        padding: 18px;
+    }
+
+}
+
+
+/* Respect reduced-motion accessibility preference */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+
+.contact-phone {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #003087;
+}
+
