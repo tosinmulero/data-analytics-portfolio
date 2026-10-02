@@ -877,3 +877,136 @@ footer {
     margin-bottom: 0;
 }
 
+
+/* ==========================================
+   FINAL NAVIGATION UPGRADE
+   ========================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 12px rgba(0, 48, 135, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    color: #003087;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.15rem;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    position: relative;
+    color: #25364a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #005eb8;
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #005eb8;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-cta {
+    display: inline-block;
+    padding: 10px 17px;
+    border-radius: 7px;
+    background: #005eb8;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-cta:hover {
+    background: #003087;
+    transform: translateY(-2px);
+}
+
+.logo:focus-visible,
+.nav-links a:focus-visible,
+.nav-cta:focus-visible {
+    outline: 3px solid #00a9ce;
+    outline-offset: 4px;
+}
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 14px 16px;
+    }
+
+    .nav-links {
+        font-size: 0.9rem;
+        gap: 12px;
+    }
+
+}
+
