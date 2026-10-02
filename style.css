@@ -705,3 +705,70 @@ footer {
 
 }
 
+
+/* ==========================================
+   ABOUT SECTION
+   ========================================== */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.about-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    border-top: 4px solid #00a9ce;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 48, 135, 0.12);
+}
+
+.about-card h3 {
+    color: #003087;
+    margin-bottom: 7px;
+}
+
+.about-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 850px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+}
+
