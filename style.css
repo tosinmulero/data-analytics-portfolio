@@ -1752,3 +1752,222 @@ footer {
         font-size: 0.7rem;
     }
 }
+/* ==========================================================
+   GITHUB_WEBSITE_FULL_SYNC_2026
+   Mirrors the recruiter-facing GitHub portfolio presentation
+   ========================================================== */
+
+.projects-intro,
+.standards-intro {
+    max-width: 860px;
+    margin: 0 auto 36px;
+    text-align: center;
+    line-height: 1.8;
+    color: #475569;
+}
+
+.projects-grid {
+    align-items: stretch;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-content > p:first-of-type {
+    line-height: 1.75;
+}
+
+.project-tools {
+    margin-top: auto;
+    padding-top: 14px;
+    line-height: 1.7;
+}
+
+.project-links-multi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.project-links-multi .project-btn {
+    margin: 0;
+}
+
+.project-btn-secondary {
+    background: #ffffff !important;
+    color: #1d4ed8 !important;
+    border: 1px solid #bfdbfe;
+    box-shadow: none !important;
+}
+
+.project-btn-secondary:hover {
+    background: #eff6ff !important;
+    color: #1e40af !important;
+    transform: translateY(-2px);
+}
+
+.data-disclosure {
+    margin: 18px 0;
+    padding: 16px 18px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fffbeb, #fff7ed);
+    border-left: 5px solid #f59e0b;
+    color: #78350f;
+    line-height: 1.65;
+    font-size: 0.93rem;
+}
+
+.standards-section {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(6,182,212,0.10), transparent 35%),
+        radial-gradient(circle at 90% 20%, rgba(124,58,237,0.10), transparent 35%),
+        #f8fafc;
+    border-radius: 28px;
+    margin-bottom: 70px;
+}
+
+.standards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.standard-card {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 28px rgba(15,23,42,0.07);
+}
+
+.standard-card:nth-child(1) { border-top: 5px solid #2563eb; }
+.standard-card:nth-child(2) { border-top: 5px solid #06b6d4; }
+.standard-card:nth-child(3) { border-top: 5px solid #7c3aed; }
+.standard-card:nth-child(4) { border-top: 5px solid #10b981; }
+
+.standard-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+    background: #0f172a;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.standard-card h3 {
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.standard-card p {
+    line-height: 1.7;
+    color: #475569;
+}
+
+.github-coverage {
+    margin-top: 34px;
+    padding: 28px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #0f172a, #172554);
+    color: #ffffff;
+}
+
+.github-coverage h3 {
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.coverage-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.coverage-links a {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.20);
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.coverage-links a:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.18);
+}
+
+.education-section {
+    padding-top: 20px;
+}
+
+.education-card {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 28px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 18px;
+    border-top: 5px solid #7c3aed;
+    box-shadow: 0 10px 28px rgba(15,23,42,0.08);
+}
+
+.education-card h3 {
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.education-card p {
+    margin-top: 8px;
+    line-height: 1.65;
+    color: #475569;
+}
+
+@media (max-width: 850px) {
+    .standards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-links-multi {
+        flex-direction: column;
+    }
+
+    .project-links-multi .project-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .github-coverage {
+        padding: 22px;
+    }
+
+    .coverage-links {
+        flex-direction: column;
+    }
+
+    .coverage-links a {
+        text-align: center;
+    }
+}
