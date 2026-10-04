@@ -3,435 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oluwatosin Mulero — Data Analyst, Business Intelligence and Data Scientist portfolio featuring explainable credit-risk machine learning, Customer 360, NHS, e-commerce, mobility and wellness analytics using Python, SQL, Power BI and modern ML tooling.">
+    <meta name="description" content="Oluwatosin Mulero — Data Analyst, Business Intelligence and Data Scientist portfolio featuring explainable credit-risk machine learning, Customer 360, NHS, e-commerce, mobility and wellness analytics.">
     <meta name="author" content="Oluwatosin Oluwaseun Mulero">
-    <meta name="theme-color" content="#0F172A">
-    <title>Oluwatosin Mulero | Data Analytics & Business Intelligence Portfolio</title>
+    <meta name="theme-color" content="#060816">
+    <meta property="og:title" content="Oluwatosin Mulero | Data Analytics, BI & Data Science">
+    <meta property="og:description" content="Recruiter-facing portfolio of analytics, BI and machine-learning projects built with SQL, Python, Power BI, XGBoost, SHAP, FastAPI and modern data tooling.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tosinmulero.github.io/data-analytics-portfolio/">
+    <title>Oluwatosin Mulero | Data Analytics, BI & Data Science</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a href="#home" class="skip-link">Skip to main content</a>
+    <div class="page-progress" aria-hidden="true"><span id="page-progress-bar"></span></div>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header>
+    <header class="site-header">
         <nav class="navbar" aria-label="Primary navigation">
-            <a href="#home" class="logo">Oluwatosin Mulero</a>
+            <a href="#home" class="brand" aria-label="Oluwatosin Mulero home">
+                <span class="brand-mark">OM</span>
+                <span class="brand-copy">
+                    <strong>Oluwatosin Mulero</strong>
+                    <small>Data • BI • AI</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#skills">Capabilities</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#standards">Portfolio Standard</a></li>
+                <li><a href="#standards">Standards</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="https://github.com/tosinmulero" target="_blank" rel="noopener noreferrer" class="nav-cta">GitHub Profile</a>
+
+            <a href="https://github.com/tosinmulero" target="_blank" rel="noopener noreferrer" class="nav-cta">
+                GitHub ↗
+            </a>
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-inner">
-                <div class="hero-text">
-                    <p class="hero-label">Data Analytics • Business Intelligence • Data Science</p>
-                    <h1>Oluwatosin Mulero</h1>
-                    <h2>Data Analyst | Business Intelligence | Data Scientist</h2>
+    <main id="main">
+        <section id="home" class="hero section-shell">
+            <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+            <div class="hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow"><span class="status-dot"></span> Data Analytics • Business Intelligence • Data Science • Explainable AI</p>
+
+                    <h1>
+                        Turning complex data into
+                        <span class="gradient-text">decision-ready systems.</span>
+                    </h1>
+
+                    <p class="hero-role">Oluwatosin Mulero — Data Analyst | Business Intelligence | Data Scientist</p>
+
                     <p class="hero-description">
-                        MSc Data Science professional transforming complex datasets into robust analytical models,
-                        decision-ready dashboards and commercially useful insight using SQL, Python, Power BI,
-                        DAX, Power Query, PostgreSQL, BigQuery and Tableau.
+                        MSc Data Science professional building rigorous analytical workflows, executive BI,
+                        machine-learning systems and reproducible portfolio case studies using SQL, Python,
+                        Power BI, PostgreSQL, XGBoost, SHAP, MLflow and modern data tooling.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn primary-btn">View Featured Projects</a>
-                        <a href="https://github.com/tosinmulero" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">Open GitHub</a>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore flagship work</a>
+                        <a href="https://github.com/tosinmulero" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Open GitHub</a>
+                        <a href="https://www.linkedin.com/in/oluwatosin-mulero-55a578140" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn ↗</a>
                     </div>
-                </div>
-                <div class="hero-photo-wrap">
-                    <img fetchpriority="high" src="images/profile.png" alt="Oluwatosin Mulero" class="profile-photo">
-                </div>
-            </div>
-        </section>
 
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <div class="about-container">
-                <div class="about-text">
-                    <p>
-                        I am a <strong>Data Analyst and Data Scientist with an MSc in Data Science</strong>,
-                        focused on translating complex datasets into reliable analysis, business intelligence
-                        and decision-support solutions.
-                    </p>
-                    <p>
-                        My portfolio demonstrates end-to-end work across <strong>customer analytics, commercial analytics,
-                        healthcare, e-commerce, mobility, wellness, forecasting, experimentation, data quality and CRM analytics</strong>.
-                    </p>
-                    <p>
-                        I work with <strong>SQL, Python, Power BI, DAX, Power Query, PostgreSQL, BigQuery, Tableau and Excel</strong>,
-                        with particular emphasis on reproducibility, data quality, KPI design and clear business interpretation.
-                    </p>
-                </div>
-
-                <div class="about-highlights">
-                    <div class="about-card"><h3>MSc</h3><p>Data Science</p></div>
-                    <div class="about-card"><h3>SQL + Python</h3><p>Analytics & Transformation</p></div>
-                    <div class="about-card"><h3>Power BI</h3><p>BI, DAX & Power Query</p></div>
-                    <div class="about-card"><h3>6 Projects</h3><p>Professional GitHub Portfolio</p></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>Technical Skills</h2>
-            <p class="skills-intro">
-                The website now mirrors the core technical capabilities presented across my GitHub profile
-                and featured repositories.
-            </p>
-
-            <div class="skills-categories">
-                <div class="skill-category">
-                    <h3>Data Analysis</h3>
-                    <div class="skill-tags">
-                        <span>SQL</span><span>Python</span><span>Pandas</span><span>Excel</span>
-                        <span>Data Cleaning</span><span>Data Validation</span><span>EDA</span>
-                        <span>Statistical Analysis</span>
+                    <div class="hero-proof">
+                        <span><strong>6</strong> end-to-end case studies</span>
+                        <span><strong>CI-backed</strong> repositories</span>
+                        <span><strong>MSc</strong> Data Science</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <aside class="hero-panel reveal" aria-label="Portfolio highlights">
+                    <div class="portrait-shell">
+                        <img src="images/profile.png" alt="Oluwatosin Mulero" class="profile-photo" fetchpriority="high">
+                        <div class="portrait-badge">Analytics • BI • ML</div>
+                    </div>
+
+                    <div class="mini-dashboard">
+                        <div class="metric-tile accent-cyan">
+                            <span>Credit Risk</span>
+                            <strong>0.7834</strong>
+                            <small>sealed-test ROC-AUC</small>
+                        </div>
+                        <div class="metric-tile accent-purple">
+                            <span>Customer 360</span>
+                            <strong>270K+</strong>
+                            <small>customers analysed</small>
+                        </div>
+                        <div class="metric-tile accent-green">
+                            <span>Cyclistic</span>
+                            <strong>5.93M</strong>
+                            <small>rides analysed</small>
+                        </div>
+                        <div class="metric-tile accent-gold">
+                            <span>NHS</span>
+                            <strong>192</strong>
+                            <small>provider codes</small>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="impact-strip" aria-label="Portfolio scale">
+            <div class="impact-item"><strong>30,000</strong><span>credit-risk records</span></div>
+            <div class="impact-item"><strong>270,154</strong><span>Customer 360 customers</span></div>
+            <div class="impact-item"><strong>5.93M</strong><span>bike-share trips</span></div>
+            <div class="impact-item"><strong>96,211</strong><span>e-commerce orders</span></div>
+            <div class="impact-item"><strong>956</strong><span>NHS provider-month records</span></div>
+        </section>
+
+        <section id="about" class="section-shell">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Profile</p>
+                <h2>Analytics with engineering discipline.</h2>
+                <p>
+                    I combine business interpretation, statistical reasoning, BI development and machine learning
+                    to produce work that is technically defensible, reproducible and easy for decision-makers to use.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <article class="glass-card reveal">
+                    <span class="card-index">01</span>
                     <h3>Business Intelligence</h3>
-                    <div class="skill-tags">
-                        <span>Power BI</span><span>DAX</span><span>Power Query</span><span>Tableau</span>
-                        <span>KPI Design</span><span>Executive Dashboards</span><span>Data Visualisation</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Databases & Analytics Engineering</h3>
-                    <div class="skill-tags">
-                        <span>PostgreSQL</span><span>Google BigQuery</span><span>SQL Transformations</span>
-                        <span>Reusable Views</span><span>Data Quality Controls</span><span>Git</span><span>GitHub</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Customer & Commercial Analytics</h3>
-                    <div class="skill-tags">
-                        <span>Customer 360</span><span>Cohort Analysis</span><span>RFM Segmentation</span>
-                        <span>Acquisition Analysis</span><span>Product Analytics</span><span>Revenue Analytics</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Data Science & Modelling</h3>
-                    <div class="skill-tags">
-                        <span>Scikit-learn</span><span>SciPy</span><span>statsmodels</span>
-                        <span>Feature Engineering</span><span>Forecasting</span><span>A/B Testing</span>
-                        <span>Machine Learning</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Development & Reporting</h3>
-                    <div class="skill-tags">
-                        <span>VS Code</span><span>Jupyter Notebook</span><span>PBIP</span>
-                        <span>PBIR</span><span>TMDL</span><span>Source Control</span>
-                        <span>Automated Quality Checks</span>
-                    </div>
-                </div>
+                    <p>Executive dashboards, KPI design, DAX, Power Query, Power BI and decision-focused reporting.</p>
+                </article>
+                <article class="glass-card reveal">
+                    <span class="card-index">02</span>
+                    <h3>Analytics Engineering</h3>
+                    <p>SQL transformations, PostgreSQL, BigQuery, data validation, quality controls and reusable analytical layers.</p>
+                </article>
+                <article class="glass-card reveal">
+                    <span class="card-index">03</span>
+                    <h3>Machine Learning</h3>
+                    <p>Feature engineering, model benchmarking, XGBoost, LightGBM, Optuna, calibration and explainability.</p>
+                </article>
+                <article class="glass-card reveal">
+                    <span class="card-index">04</span>
+                    <h3>Delivery & Governance</h3>
+                    <p>Git, GitHub Actions, Pytest, MLflow, FastAPI, Streamlit, model cards, monitoring and documented limitations.</p>
+                </article>
             </div>
         </section>
 
-        <section id="projects" class="section">
-            <h2>Featured Portfolio Projects</h2>
-            <p class="projects-intro">
-                These six projects mirror the recruiter-facing information, metrics, technologies and resource links
-                published across my GitHub repositories.
-            </p>
+        <section id="skills" class="section-shell">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Capability matrix</p>
+                <h2>Tools selected for the problem, not for decoration.</h2>
+                <p>Each technology below is represented in the published project portfolio or supporting workflow.</p>
+            </div>
 
-            <div class="projects-grid">
+            <div class="capability-grid">
+                <article class="capability-card reveal">
+                    <div class="capability-icon cyan">01</div>
+                    <h3>Analytics & BI</h3>
+                    <div class="tag-cloud">
+                        <span>SQL</span><span>Power BI</span><span>DAX</span><span>Power Query</span>
+                        <span>Tableau</span><span>Excel</span><span>KPI Design</span><span>Executive Reporting</span>
+                    </div>
+                </article>
 
-                <article class="project-card credit-risk-project">
-                    <div class="project-featured-label">Data Science Flagship</div>
-                    <img loading="lazy"
-                         src="https://raw.githubusercontent.com/tosinmulero/credit-risk-explainable-ai/main/reports/figures/21_shap_global_importance.png"
-                         alt="SHAP global feature importance for the Credit Risk Intelligence project"
-                         class="project-image">
-                    <div class="project-content">
-                        <h3>Credit Risk Intelligence &amp; Explainable Default Prediction</h3>
-                        <p>
-                            Production-style machine-learning case study covering model benchmarking, Optuna optimisation,
-                            probability calibration, cost-sensitive decisioning, SHAP explainability, subgroup auditing,
-                            MLflow tracking, FastAPI inference, Streamlit delivery and automated CI.
-                        </p>
+                <article class="capability-card reveal">
+                    <div class="capability-icon purple">02</div>
+                    <h3>Data Science & AI</h3>
+                    <div class="tag-cloud">
+                        <span>Python</span><span>pandas</span><span>scikit-learn</span><span>XGBoost</span>
+                        <span>LightGBM</span><span>Optuna</span><span>SHAP</span><span>Forecasting</span>
+                    </div>
+                </article>
 
-                        <div class="project-results">
-                            <h4>Key Results</h4>
-                            <ul>
-                                <li><strong>30,000</strong> credit-card client records analysed.</li>
-                                <li>Selected <strong>Optuna-tuned XGBoost</strong> after Logistic Regression, Random Forest, LightGBM and XGBoost benchmarking.</li>
-                                <li>Final sealed-test <strong>ROC-AUC 0.7834</strong> and <strong>PR-AUC 0.5622</strong>.</li>
-                                <li><strong>80.71% recall</strong> at a frozen operating threshold of <strong>0.145</strong>.</li>
-                                <li>Illustrative validation cost reduction of <strong>29.1%</strong> under a 5:1 false-negative:false-positive scenario.</li>
-                                <li>SHAP explainability, subgroup audit, drift monitoring and GitHub Actions quality gates.</li>
-                            </ul>
+                <article class="capability-card reveal">
+                    <div class="capability-icon green">03</div>
+                    <h3>Data & Engineering</h3>
+                    <div class="tag-cloud">
+                        <span>PostgreSQL</span><span>BigQuery</span><span>ETL / ELT</span><span>Data Quality</span>
+                        <span>Parquet</span><span>Git</span><span>GitHub</span><span>VS Code</span>
+                    </div>
+                </article>
+
+                <article class="capability-card reveal">
+                    <div class="capability-icon gold">04</div>
+                    <h3>MLOps & Delivery</h3>
+                    <div class="tag-cloud">
+                        <span>MLflow</span><span>FastAPI</span><span>Streamlit</span><span>Pytest</span>
+                        <span>Ruff</span><span>GitHub Actions</span><span>Drift Monitoring</span><span>Model Governance</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section-shell projects-section">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Selected work</p>
+                <h2>Six projects. One consistent engineering standard.</h2>
+                <p>
+                    The website and GitHub profile now use the same project order, the same evidence and the same portfolio narrative.
+                </p>
+            </div>
+
+            <div class="flagship-grid">
+                <article class="project-card project-flagship credit-risk reveal">
+                    <div class="project-topline">
+                        <span class="project-badge">Data Science Flagship</span>
+                        <span class="project-number">01</span>
+                    </div>
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/tosinmulero/credit-risk-explainable-ai/main/reports/figures/21_shap_global_importance.png"
+                             alt="Credit Risk Intelligence SHAP global feature importance" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <p class="project-domain">Machine Learning • Explainable AI • MLOps</p>
+                            <h3>Credit Risk Intelligence & Explainable Default Prediction</h3>
+                            <p>
+                                Production-style credit-risk workflow covering model benchmarking, Optuna tuning,
+                                probability calibration, cost-sensitive thresholding, SHAP explainability,
+                                subgroup auditing, MLflow tracking, FastAPI, Streamlit and CI.
+                            </p>
                         </div>
 
-                        <div class="data-disclosure">
-                            <strong>Responsible-use note:</strong> Portfolio demonstration using a public historical benchmark dataset.
-                            Not intended for real lending, underwriting or adverse-action decisions.
+                        <div class="project-kpis">
+                            <span><strong>0.7834</strong> ROC-AUC</span>
+                            <span><strong>0.5622</strong> PR-AUC</span>
+                            <span><strong>80.71%</strong> recall</span>
+                            <span><strong>29.1%</strong> illustrative cost reduction</span>
                         </div>
 
-                        <p class="project-tools">Python • XGBoost • LightGBM • scikit-learn • Optuna • SHAP • MLflow • FastAPI • Streamlit • Pytest • GitHub Actions</p>
+                        <p class="project-stack">Python • XGBoost • LightGBM • Optuna • SHAP • MLflow • FastAPI • Streamlit • Pytest • GitHub Actions</p>
 
-                        <div class="project-links project-links-multi">
-                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub Repository</a>
-                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/MODEL_CARD.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Model Card</a>
-                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Architecture</a>
+                        <div class="project-actions">
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/MODEL_CARD.md" target="_blank" rel="noopener noreferrer" class="project-btn">Model Card</a>
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn">Architecture</a>
+                        </div>
+
+                        <p class="responsible-note">Portfolio demonstration using a public historical benchmark dataset; not intended for live underwriting decisions.</p>
+                    </div>
+                </article>
+
+                <article class="project-card project-flagship customer360 reveal">
+                    <div class="project-topline">
+                        <span class="project-badge">Analytics & BI Flagship</span>
+                        <span class="project-number">02</span>
+                    </div>
+                    <div class="project-media">
+                        <img src="images/customer360_executive_overview.png"
+                             alt="Customer 360 and Revenue Growth Analytics executive dashboard" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <p class="project-domain">Commercial Analytics • Power BI • Forecasting</p>
+                            <h3>Customer 360 & Revenue Growth Analytics</h3>
+                            <p>
+                                End-to-end commercial analytics combining SQL, Python, Power BI, customer segmentation,
+                                forecasting and reproducible experimentation.
+                            </p>
+                        </div>
+
+                        <div class="project-kpis">
+                            <span><strong>270,154</strong> customers</span>
+                            <span><strong>362,165</strong> revenue</span>
+                            <span><strong>775</strong> repeat purchasers</span>
+                            <span><strong>19.25%</strong> synthetic A/B lift</span>
+                        </div>
+
+                        <p class="project-stack">SQL • Python • pandas • Power BI • DAX • Power Query • PBIP • PBIR • TMDL • Forecasting</p>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
+                            <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn">Recruiter Summary</a>
+                        </div>
+
+                        <p class="responsible-note">Synthetic A/B and marketing-spend examples are explicitly labelled as synthetic in the project.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card compact reveal">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/tosinmulero/nhs-hospital-performance-analysis/main/images/nhs_dashboard_overview.png"
+                             alt="NHS Hospital Performance dashboard" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <p class="project-domain">Healthcare Analytics • SQL • Power BI</p>
+                        <h3>NHS Hospital Performance & Patient Flow</h3>
+                        <p>Provider benchmarking, four-hour performance, 12-hour waits, regional variation and patient-flow analysis.</p>
+                        <div class="project-kpis small">
+                            <span><strong>956</strong> provider-month rows</span>
+                            <span><strong>192</strong> provider codes</span>
+                            <span><strong>120</strong> Type 1 benchmarked</span>
+                        </div>
+                        <p class="project-stack">Python • PostgreSQL • SQL • Power BI • DAX • Power Query</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/tosinmulero/nhs-hospital-performance-analysis" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
+                            <a href="https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn">Summary</a>
                         </div>
                     </div>
                 </article>
 
-
-                <article class="project-card customer360-project">
-                    <div class="project-featured-label">Flagship Project</div>
-                    <img loading="lazy" src="images/customer360_executive_overview.png"
-                         alt="Customer 360 and Revenue Growth Analytics Power BI Executive Overview"
-                         class="project-image">
-                    <div class="project-content">
-                        <h3>Customer 360 &amp; Revenue Growth Analytics</h3>
-                        <p>
-                            End-to-end commercial analytics solution combining SQL, Python, Power BI, DAX,
-                            PBIP/PBIR/TMDL, customer segmentation, forecasting and experimentation.
-                        </p>
-
-                        <div class="project-results customer360-results">
-                            <h4>Key Results</h4>
-                            <ul>
-                                <li><strong>270,154</strong> customers analysed.</li>
-                                <li><strong>4,419</strong> purchasing customers and <strong>775</strong> repeat purchasing customers.</li>
-                                <li><strong>362,165</strong> GA4 sample e-commerce revenue.</li>
-                                <li>Highest-revenue month: <strong>December 2020 — 160,555</strong>.</li>
-                                <li>Highest-revenue acquisition channel: <strong>google / organic — 95,775</strong>.</li>
-                                <li>Top product: <strong>Google Zip Hoodie F/C — 13,692</strong> revenue.</li>
-                                <li>14-day forecast with holdout <strong>MAE 1,809.72</strong> and <strong>RMSE 2,278.03</strong>.</li>
-                                <li>Synthetic A/B test: <strong>19.25% relative lift</strong>, <strong>p = 0.0186</strong>.</li>
-                            </ul>
-                        </div>
-
-                        <div class="data-disclosure">
-                            <strong>Data disclosure:</strong> Customer, acquisition, product, revenue and forecasting analysis
-                            use Google GA4 public sample e-commerce data. A/B experiment observations and marketing-spend
-                            examples are synthetic and explicitly labelled as synthetic.
-                        </div>
-
-                        <p class="project-tools">SQL • Python • pandas • Power BI • DAX • Power Query • PBIP • PBIR • TMDL • Forecasting • Experimentation</p>
-
-                        <div class="project-links project-links-multi">
-                            <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics" target="_blank" rel="noopener noreferrer" class="project-btn customer360-btn">GitHub Repository</a>
-                            <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Recruiter Summary</a>
-                        </div>
+                <article class="project-card compact reveal">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/tosinmulero/olist-ecommerce-analysis/main/images/olist_dashboard.png"
+                             alt="Olist E-Commerce dashboard" loading="lazy">
                     </div>
-                </article>
-
-                <article class="project-card">
-                    <img loading="lazy"
-                         src="https://raw.githubusercontent.com/tosinmulero/nhs-hospital-performance-analysis/main/images/nhs_dashboard_overview.png"
-                         alt="NHS Hospital Performance Power BI Dashboard"
-                         class="project-image">
-                    <div class="project-content">
-                        <h3>NHS Hospital Performance &amp; Patient Flow Analysis</h3>
-                        <p>
-                            End-to-end NHS England A&amp;E analytics covering demand, four-hour performance,
-                            regional variation, 12-hour waits and Type 1 provider benchmarking from April to August 2026.
-                        </p>
-                        <div class="project-results">
-                            <h4>Key Results</h4>
-                            <ul>
-                                <li><strong>956</strong> provider-month records across <strong>192</strong> provider codes.</li>
-                                <li>Formal benchmark of <strong>120 Type 1 providers</strong>.</li>
-                                <li>July A&amp;E attendances: <strong>2,487,580</strong>.</li>
-                                <li>National four-hour performance: <strong>76.91%</strong> in April vs <strong>75.04%</strong> in August.</li>
-                                <li>Provider-level association between four-hour performance and 12-hour waits: <strong>r = -0.235</strong>.</li>
-                            </ul>
-                        </div>
-                        <p class="project-tools">Python • pandas • PostgreSQL • SQL • Power BI • DAX • Power Query</p>
-                        <div class="project-links project-links-multi">
-                            <a href="https://github.com/tosinmulero/nhs-hospital-performance-analysis" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub Repository</a>
-                            <a href="https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/TECHNICAL_ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Architecture</a>
-                            <a href="https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Recruiter Summary</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <img loading="lazy"
-                         src="https://raw.githubusercontent.com/tosinmulero/olist-ecommerce-analysis/main/images/olist_dashboard.png"
-                         alt="Olist E-Commerce Performance Dashboard"
-                         class="project-image">
-                    <div class="project-content">
+                    <div class="project-body">
+                        <p class="project-domain">E-Commerce • RFM • Logistics</p>
                         <h3>Olist E-Commerce Analytics</h3>
-                        <p>
-                            Commercial, customer, logistics and retention analytics using PostgreSQL, SQL,
-                            Power BI, DAX and RFM segmentation.
-                        </p>
-                        <div class="project-results">
-                            <h4>Key Results</h4>
-                            <ul>
-                                <li><strong>96,211</strong> delivered orders and <strong>93,104</strong> unique customers.</li>
-                                <li><strong>R$13.18M</strong> merchandise revenue and <strong>R$15.37M</strong> total order value.</li>
-                                <li>Average order value: <strong>R$159.79</strong>.</li>
-                                <li>Repeat-customer rate: <strong>3.00%</strong>.</li>
-                                <li>Late-delivery rate: <strong>8.13%</strong>; cross-state orders: <strong>64.15%</strong>.</li>
-                                <li>Late deliveries averaged <strong>2.57/5</strong> reviews vs <strong>4.30/5</strong> for on-time/early deliveries.</li>
-                            </ul>
+                        <p>Commercial, customer, logistics and retention analytics with PostgreSQL, SQL, Power BI and RFM segmentation.</p>
+                        <div class="project-kpis small">
+                            <span><strong>96,211</strong> delivered orders</span>
+                            <span><strong>R$15.37M</strong> order value</span>
+                            <span><strong>3.00%</strong> repeat rate</span>
                         </div>
-                        <p class="project-tools">PostgreSQL • SQL • Power BI • DAX • Power Query • RFM • Logistics Analytics</p>
-                        <div class="project-links project-links-multi">
-                            <a href="https://github.com/tosinmulero/olist-ecommerce-analysis" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub Repository</a>
-                            <a href="https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/TECHNICAL_ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Architecture</a>
-                            <a href="https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Recruiter Summary</a>
+                        <p class="project-stack">PostgreSQL • SQL • Power BI • DAX • RFM • Logistics Analytics</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/tosinmulero/olist-ecommerce-analysis" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
+                            <a href="https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn">Summary</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <img loading="lazy"
-                         src="https://raw.githubusercontent.com/tosinmulero/cyclistic-rider-behaviour-analysis/main/images/Cyclist_Powerbi_Dashboard.png"
-                         alt="Cyclistic Rider Behaviour Power BI Dashboard"
-                         class="project-image">
-                    <div class="project-content">
+                <article class="project-card compact reveal">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/tosinmulero/cyclistic-rider-behaviour-analysis/main/images/Cyclist_Powerbi_Dashboard.png"
+                             alt="Cyclistic Rider Behaviour dashboard" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <p class="project-domain">Mobility Analytics • Behaviour • Power BI</p>
                         <h3>Cyclistic Rider Behaviour Analysis</h3>
-                        <p>
-                            Behavioural analysis of approximately 5.93 million bike-share trips comparing
-                            annual members and casual riders across volume, duration, time, season and bike type.
-                        </p>
-                        <div class="project-results">
-                            <h4>Key Results</h4>
-                            <ul>
-                                <li><strong>5.93M</strong> valid rides analysed.</li>
-                                <li>Members: <strong>3.81M rides (64.36%)</strong>.</li>
-                                <li>Casual riders: <strong>2.11M rides (35.64%)</strong>.</li>
-                                <li>Member average duration: <strong>12.06 min</strong>.</li>
-                                <li>Casual average duration: <strong>18.57 min</strong>.</li>
-                                <li>Member activity shows commute-style peaks around <strong>8 AM</strong> and <strong>5 PM</strong>.</li>
-                            </ul>
+                        <p>Large-scale bike-share analysis comparing member and casual rider patterns across time, duration and seasonality.</p>
+                        <div class="project-kpis small">
+                            <span><strong>5.93M</strong> rides</span>
+                            <span><strong>64.36%</strong> members</span>
+                            <span><strong>18.57 min</strong> casual avg.</span>
                         </div>
-                        <p class="project-tools">Python • pandas • Jupyter • Power BI • DAX • Power Query • Parquet</p>
-                        <div class="project-links project-links-multi">
-                            <a href="https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub Repository</a>
-                            <a href="https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/TECHNICAL_ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Architecture</a>
-                            <a href="https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Recruiter Summary</a>
+                        <p class="project-stack">Python • pandas • Parquet • Power BI • DAX • Power Query</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
+                            <a href="https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn">Summary</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <img loading="lazy"
-                         src="https://raw.githubusercontent.com/tosinmulero/bellabeat-wellness-analysis/main/images/bellabeat_dashboard.png"
-                         alt="Bellabeat Wellness Analysis Power BI Dashboard"
-                         class="project-image">
-                    <div class="project-content">
-                        <h3>Bellabeat Smart Device Usage &amp; Wellness Behaviour Analysis</h3>
-                        <p>
-                            Fitbit activity and sleep analytics using the Google Data Analytics case-study framework
-                            to explore activity, sedentary behaviour, calories, sleep and behavioural segmentation.
-                        </p>
-                        <div class="project-results">
-                            <h4>Key Results</h4>
-                            <ul>
-                                <li>Average daily steps: <strong>7,801</strong>.</li>
-                                <li>Average sedentary minutes: <strong>1,083</strong>.</li>
-                                <li>Average sleep duration: <strong>419 min (~7 h)</strong>.</li>
-                                <li>Average sleep efficiency: <strong>91.65%</strong>.</li>
-                                <li>Steps vs calories correlation: <strong>r ≈ 0.58</strong>.</li>
-                                <li><strong>29</strong> users had at least 14 valid activity days.</li>
-                            </ul>
+                <article class="project-card compact reveal">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/tosinmulero/bellabeat-wellness-analysis/main/images/bellabeat_dashboard.png"
+                             alt="Bellabeat Wellness dashboard" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <p class="project-domain">Wellness Analytics • Behaviour • Power BI</p>
+                        <h3>Bellabeat Wellness Analysis</h3>
+                        <p>Fitbit activity and sleep analysis exploring behaviour, sedentary time, calories, sleep and user-level patterns.</p>
+                        <div class="project-kpis small">
+                            <span><strong>7,801</strong> avg. daily steps</span>
+                            <span><strong>419 min</strong> avg. sleep</span>
+                            <span><strong>91.65%</strong> sleep efficiency</span>
                         </div>
-                        <p class="project-tools">Python • pandas • Matplotlib • Jupyter • Power BI • Behavioural Analytics</p>
-                        <div class="project-links project-links-multi">
-                            <a href="https://github.com/tosinmulero/bellabeat-wellness-analysis" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub Repository</a>
-                            <a href="https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/TECHNICAL_ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Architecture</a>
-                            <a href="https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Recruiter Summary</a>
+                        <p class="project-stack">Python • pandas • Power BI • Behavioural Analytics</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/tosinmulero/bellabeat-wellness-analysis" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
+                            <a href="https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn">Summary</a>
                         </div>
                     </div>
                 </article>
-
             </div>
         </section>
 
-        <section id="standards" class="section standards-section">
-            <h2>GitHub Portfolio Standard</h2>
-            <p class="standards-intro">
-                The website mirrors the public recruiter-facing content across my GitHub profile and six primary analytics and data-science repositories.
-                Source code, notebooks, SQL, Power BI assets and full technical documentation remain available in the linked repositories.
-            </p>
+        <section id="standards" class="section-shell standards-section">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Portfolio standard</p>
+                <h2>Evidence, reproducibility and responsible interpretation.</h2>
+                <p>Each flagship repository is presented as a case study, not just a collection of files.</p>
+            </div>
 
             <div class="standards-grid">
-                <div class="standard-card">
-                    <span class="standard-icon">01</span>
-                    <h3>Recruiter-First Documentation</h3>
-                    <p>Every featured repository includes an executive project narrative, measurable results, technology stack and explicit analytical scope.</p>
-                </div>
-                <div class="standard-card">
-                    <span class="standard-icon">02</span>
-                    <h3>Technical Architecture</h3>
-                    <p>Cyclistic, Bellabeat, Olist and NHS include dedicated technical architecture documentation showing the end-to-end analytical flow.</p>
-                </div>
-                <div class="standard-card">
-                    <span class="standard-icon">03</span>
-                    <h3>Automated Quality Checks</h3>
-                    <p>Multiple featured repositories include GitHub Actions quality workflows validating code, tests, required assets and repository integrity.</p>
-                </div>
-                <div class="standard-card">
-                    <span class="standard-icon">04</span>
-                    <h3>Responsible Interpretation</h3>
-                    <p>Projects document limitations, distinguish observational evidence from causality and disclose synthetic analytical examples where used.</p>
-                </div>
-            </div>
-
-            <div class="github-coverage">
-                <h3>GitHub Resources Mirrored Here</h3>
-                <div class="coverage-links">
-                    <a href="https://github.com/tosinmulero" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-                    <a href="https://github.com/tosinmulero/tosinmulero/blob/main/RECRUITER_PORTFOLIO_SUMMARY.md" target="_blank" rel="noopener noreferrer">Recruiter Portfolio Summary</a>
-                    <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics" target="_blank" rel="noopener noreferrer">Customer 360</a>
-                    <a href="https://github.com/tosinmulero/nhs-hospital-performance-analysis" target="_blank" rel="noopener noreferrer">NHS</a>
-                    <a href="https://github.com/tosinmulero/olist-ecommerce-analysis" target="_blank" rel="noopener noreferrer">Olist</a>
-                    <a href="https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis" target="_blank" rel="noopener noreferrer">Cyclistic</a>
-                    <a href="https://github.com/tosinmulero/bellabeat-wellness-analysis" target="_blank" rel="noopener noreferrer">Bellabeat</a>
-                </div>
+                <article class="standard-card reveal">
+                    <span>01</span>
+                    <h3>Recruiter-first narrative</h3>
+                    <p>Business problem, technical approach, measurable outcomes and clear technology stack.</p>
+                </article>
+                <article class="standard-card reveal">
+                    <span>02</span>
+                    <h3>Reproducible engineering</h3>
+                    <p>Source-controlled pipelines, documented setup, structured outputs and automated quality checks.</p>
+                </article>
+                <article class="standard-card reveal">
+                    <span>03</span>
+                    <h3>Technical depth</h3>
+                    <p>Architecture documentation, model evaluation, SQL/BI assets, feature engineering and validation evidence.</p>
+                </article>
+                <article class="standard-card reveal">
+                    <span>04</span>
+                    <h3>Responsible interpretation</h3>
+                    <p>Limitations, synthetic-data disclosures, non-causal interpretation and model-governance boundaries are explicit.</p>
+                </article>
             </div>
         </section>
 
-        <section id="education" class="section education-section">
-            <h2>Education</h2>
-            <div class="education-card">
-                <h3>MSc Data Science</h3>
-                <p><strong>University of Greenwich</strong></p>
-                <p>Data analytics • Machine learning • Statistical modelling • Data-driven problem solving</p>
+        <section class="section-shell education-section">
+            <div class="education-card reveal">
+                <p class="section-kicker">Education</p>
+                <h2>MSc Data Science</h2>
+                <h3>University of Greenwich</h3>
+                <p>Data analytics • machine learning • statistical modelling • data-driven problem solving</p>
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p class="contact-intro">
-                Interested in data analytics, business intelligence, data science opportunities or collaboration?
-                Connect through the channels below.
-            </p>
-
-            <div class="contact-links">
-                <a href="mailto:tosinmulero@gmail.com" class="contact-btn">Email</a>
-                <a href="https://www.linkedin.com/in/oluwatosin-mulero-55a578140" target="_blank" rel="noopener noreferrer" class="contact-btn">LinkedIn</a>
-                <a href="https://github.com/tosinmulero" target="_blank" rel="noopener noreferrer" class="contact-btn">GitHub</a>
-                <a href="tel:+447587986225" class="contact-btn">Call</a>
+        <section id="contact" class="section-shell contact-section">
+            <div class="contact-card reveal">
+                <div>
+                    <p class="section-kicker">Contact</p>
+                    <h2>Need someone who can move from raw data to a defensible decision?</h2>
+                    <p>
+                        Explore the repositories, review the evidence, or contact me about Data Analyst,
+                        Business Intelligence and Data Science opportunities.
+                    </p>
+                </div>
+                <div class="contact-actions">
+                    <a href="mailto:tosinmulero@gmail.com" class="btn btn-primary">Email me</a>
+                    <a href="https://www.linkedin.com/in/oluwatosin-mulero-55a578140" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
+                    <a href="https://github.com/tosinmulero" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub</a>
+                </div>
             </div>
-
-            <p class="contact-email">tosinmulero@gmail.com</p>
-            <p class="contact-phone">+44 7587 986225</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Oluwatosin Mulero. All rights reserved.</p>
+        <div class="footer-inner">
+            <div>
+                <strong>Oluwatosin Mulero</strong>
+                <span>Data Analytics • Business Intelligence • Data Science</span>
+            </div>
+            <p id="footer-year">© Oluwatosin Mulero. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
