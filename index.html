@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oluwatosin Mulero — Data Analyst, Business Intelligence and Data Scientist portfolio featuring Customer 360, NHS, e-commerce, mobility and wellness analytics using SQL, Python, PostgreSQL and Power BI.">
+    <meta name="description" content="Oluwatosin Mulero — Data Analyst, Business Intelligence and Data Scientist portfolio featuring explainable credit-risk machine learning, Customer 360, NHS, e-commerce, mobility and wellness analytics using Python, SQL, Power BI and modern ML tooling.">
     <meta name="author" content="Oluwatosin Oluwaseun Mulero">
     <meta name="theme-color" content="#0F172A">
     <title>Oluwatosin Mulero | Data Analytics & Business Intelligence Portfolio</title>
@@ -74,7 +74,7 @@
                     <div class="about-card"><h3>MSc</h3><p>Data Science</p></div>
                     <div class="about-card"><h3>SQL + Python</h3><p>Analytics & Transformation</p></div>
                     <div class="about-card"><h3>Power BI</h3><p>BI, DAX & Power Query</p></div>
-                    <div class="about-card"><h3>5 Projects</h3><p>Professional GitHub Portfolio</p></div>
+                    <div class="about-card"><h3>6 Projects</h3><p>Professional GitHub Portfolio</p></div>
                 </div>
             </div>
         </section>
@@ -143,11 +143,53 @@
         <section id="projects" class="section">
             <h2>Featured Portfolio Projects</h2>
             <p class="projects-intro">
-                These five projects mirror the recruiter-facing information, metrics, technologies and resource links
+                These six projects mirror the recruiter-facing information, metrics, technologies and resource links
                 published across my GitHub repositories.
             </p>
 
             <div class="projects-grid">
+
+                <article class="project-card credit-risk-project">
+                    <div class="project-featured-label">Data Science Flagship</div>
+                    <img loading="lazy"
+                         src="https://raw.githubusercontent.com/tosinmulero/credit-risk-explainable-ai/main/reports/figures/21_shap_global_importance.png"
+                         alt="SHAP global feature importance for the Credit Risk Intelligence project"
+                         class="project-image">
+                    <div class="project-content">
+                        <h3>Credit Risk Intelligence &amp; Explainable Default Prediction</h3>
+                        <p>
+                            Production-style machine-learning case study covering model benchmarking, Optuna optimisation,
+                            probability calibration, cost-sensitive decisioning, SHAP explainability, subgroup auditing,
+                            MLflow tracking, FastAPI inference, Streamlit delivery and automated CI.
+                        </p>
+
+                        <div class="project-results">
+                            <h4>Key Results</h4>
+                            <ul>
+                                <li><strong>30,000</strong> credit-card client records analysed.</li>
+                                <li>Selected <strong>Optuna-tuned XGBoost</strong> after Logistic Regression, Random Forest, LightGBM and XGBoost benchmarking.</li>
+                                <li>Final sealed-test <strong>ROC-AUC 0.7834</strong> and <strong>PR-AUC 0.5622</strong>.</li>
+                                <li><strong>80.71% recall</strong> at a frozen operating threshold of <strong>0.145</strong>.</li>
+                                <li>Illustrative validation cost reduction of <strong>29.1%</strong> under a 5:1 false-negative:false-positive scenario.</li>
+                                <li>SHAP explainability, subgroup audit, drift monitoring and GitHub Actions quality gates.</li>
+                            </ul>
+                        </div>
+
+                        <div class="data-disclosure">
+                            <strong>Responsible-use note:</strong> Portfolio demonstration using a public historical benchmark dataset.
+                            Not intended for real lending, underwriting or adverse-action decisions.
+                        </div>
+
+                        <p class="project-tools">Python • XGBoost • LightGBM • scikit-learn • Optuna • SHAP • MLflow • FastAPI • Streamlit • Pytest • GitHub Actions</p>
+
+                        <div class="project-links project-links-multi">
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai" target="_blank" rel="noopener noreferrer" class="project-btn">GitHub Repository</a>
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/MODEL_CARD.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Model Card</a>
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">Architecture</a>
+                        </div>
+                    </div>
+                </article>
+
 
                 <article class="project-card customer360-project">
                     <div class="project-featured-label">Flagship Project</div>
@@ -319,7 +361,7 @@
         <section id="standards" class="section standards-section">
             <h2>GitHub Portfolio Standard</h2>
             <p class="standards-intro">
-                The website mirrors the public recruiter-facing content across my GitHub profile and five primary analytics repositories.
+                The website mirrors the public recruiter-facing content across my GitHub profile and six primary analytics and data-science repositories.
                 Source code, notebooks, SQL, Power BI assets and full technical documentation remain available in the linked repositories.
             </p>
 
@@ -337,7 +379,7 @@
                 <div class="standard-card">
                     <span class="standard-icon">03</span>
                     <h3>Automated Quality Checks</h3>
-                    <p>The four upgraded repositories include GitHub Actions Portfolio Quality workflows validating required assets and repository integrity.</p>
+                    <p>Multiple featured repositories include GitHub Actions quality workflows validating code, tests, required assets and repository integrity.</p>
                 </div>
                 <div class="standard-card">
                     <span class="standard-icon">04</span>
