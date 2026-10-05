@@ -53,7 +53,7 @@
 
             <div class="hero-grid">
                 <div class="hero-copy reveal">
-                    <p class="eyebrow"><span class="status-dot"></span> Data Analytics • Business Intelligence • Data Science • Explainable AI</p>
+                    <p class="eyebrow"><span class="status-dot"></span> Analytics Engineering • Data Analytics • Business Intelligence • Data Science • AI</p>
 
                     <h1>
                         Turning complex data into
@@ -65,7 +65,7 @@
                     <p class="hero-description">
                         MSc Data Science professional building rigorous analytical workflows, executive BI,
                         machine-learning systems and reproducible portfolio case studies using SQL, Python,
-                        Power BI, PostgreSQL, XGBoost, SHAP, MLflow and modern data tooling.
+                        Power BI, PostgreSQL, dbt, PBIP, PBIR, TMDL, XGBoost, SHAP, MLflow and modern data tooling.
                     </p>
 
                     <div class="hero-actions">
@@ -88,25 +88,25 @@
                     </div>
 
                     <div class="mini-dashboard">
-                        <div class="metric-tile accent-cyan">
+                        <div class="metric-tile accent-cyan flagship-metric">
+                            <span>RailPartner 360</span>
+                            <strong>6.00M</strong>
+                            <small>rail searches analysed</small>
+                        </div>
+                        <div class="metric-tile accent-purple">
                             <span>Credit Risk</span>
                             <strong>0.7834</strong>
                             <small>sealed-test ROC-AUC</small>
                         </div>
-                        <div class="metric-tile accent-purple">
+                        <div class="metric-tile accent-green">
                             <span>Customer 360</span>
                             <strong>270K+</strong>
                             <small>customers analysed</small>
                         </div>
-                        <div class="metric-tile accent-green">
+                        <div class="metric-tile accent-gold">
                             <span>Cyclistic</span>
                             <strong>5.93M</strong>
                             <small>rides analysed</small>
-                        </div>
-                        <div class="metric-tile accent-gold">
-                            <span>NHS</span>
-                            <strong>192</strong>
-                            <small>provider codes</small>
                         </div>
                     </div>
                 </aside>
@@ -114,9 +114,9 @@
         </section>
 
         <section class="impact-strip" aria-label="Portfolio scale">
+            <div class="impact-item flagship-impact"><strong>6.00M</strong><span>rail searches analysed</span></div>
             <div class="impact-item"><strong>30,000</strong><span>credit-risk records</span></div>
             <div class="impact-item"><strong>270,154</strong><span>Customer 360 customers</span></div>
-            <div class="impact-item"><strong>6.00M</strong><span>rail searches analysed</span></div>
             <div class="impact-item"><strong>5.93M</strong><span>bike-share trips</span></div>
             <div class="impact-item"><strong>96,211</strong><span>e-commerce orders</span></div>
             <div class="impact-item"><strong>956</strong><span>NHS provider-month records</span></div>
@@ -141,7 +141,7 @@
                 <article class="glass-card reveal">
                     <span class="card-index">02</span>
                     <h3>Analytics Engineering</h3>
-                    <p>SQL transformations, PostgreSQL, BigQuery, data validation, quality controls and reusable analytical layers.</p>
+                    <p>SQL transformations, PostgreSQL, dbt, dimensional modelling, PBIP/PBIR/TMDL automation, data validation and reusable business marts.</p>
                 </article>
                 <article class="glass-card reveal">
                     <span class="card-index">03</span>
@@ -205,92 +205,17 @@
         <section id="projects" class="section-shell projects-section">
             <div class="section-heading reveal">
                 <p class="section-kicker">Selected work</p>
-                <h2>Seven projects. One consistent engineering standard.</h2>
+                <h2>Seven production-grade projects. One engineering standard.</h2>
                 <p>
-                    The website and GitHub profile now use the same project order, the same evidence and the same portfolio narrative.
+                    Flagship work spanning analytics engineering, business intelligence and data science — with the same project hierarchy, metrics and evidence on GitHub.
                 </p>
             </div>
 
             <div class="flagship-grid">
-                <article class="project-card project-flagship credit-risk reveal">
+                <article class="project-card project-flagship railpartner primary-flagship reveal">
                     <div class="project-topline">
-                        <span class="project-badge">Data Science Flagship</span>
+                        <span class="project-badge">Primary Flagship • Analytics Engineering</span>
                         <span class="project-number">01</span>
-                    </div>
-                    <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/tosinmulero/credit-risk-explainable-ai/main/reports/figures/21_shap_global_importance.png"
-                             alt="Credit Risk Intelligence SHAP global feature importance" loading="lazy">
-                    </div>
-                    <div class="project-body">
-                        <div>
-                            <p class="project-domain">Machine Learning • Explainable AI • MLOps</p>
-                            <h3>Credit Risk Intelligence & Explainable Default Prediction</h3>
-                            <p>
-                                Production-style credit-risk workflow covering model benchmarking, Optuna tuning,
-                                probability calibration, cost-sensitive thresholding, SHAP explainability,
-                                subgroup auditing, MLflow tracking, FastAPI, Streamlit and CI.
-                            </p>
-                        </div>
-
-                        <div class="project-kpis">
-                            <span><strong>0.7834</strong> ROC-AUC</span>
-                            <span><strong>0.5622</strong> PR-AUC</span>
-                            <span><strong>80.71%</strong> recall</span>
-                            <span><strong>29.1%</strong> illustrative cost reduction</span>
-                        </div>
-
-                        <p class="project-stack">Python • XGBoost • LightGBM • Optuna • SHAP • MLflow • FastAPI • Streamlit • Pytest • GitHub Actions</p>
-
-                        <div class="project-actions">
-                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
-                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/MODEL_CARD.md" target="_blank" rel="noopener noreferrer" class="project-btn">Model Card</a>
-                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn">Architecture</a>
-                        </div>
-
-                        <p class="responsible-note">Portfolio demonstration using a public historical benchmark dataset; not intended for live underwriting decisions.</p>
-                    </div>
-                </article>
-
-                <article class="project-card project-flagship customer360 reveal">
-                    <div class="project-topline">
-                        <span class="project-badge">Analytics & BI Flagship</span>
-                        <span class="project-number">02</span>
-                    </div>
-                    <div class="project-media">
-                        <img src="images/customer360_executive_overview.png"
-                             alt="Customer 360 and Revenue Growth Analytics executive dashboard" loading="lazy">
-                    </div>
-                    <div class="project-body">
-                        <div>
-                            <p class="project-domain">Commercial Analytics • Power BI • Forecasting</p>
-                            <h3>Customer 360 & Revenue Growth Analytics</h3>
-                            <p>
-                                End-to-end commercial analytics combining SQL, Python, Power BI, customer segmentation,
-                                forecasting and reproducible experimentation.
-                            </p>
-                        </div>
-
-                        <div class="project-kpis">
-                            <span><strong>270,154</strong> customers</span>
-                            <span><strong>362,165</strong> revenue</span>
-                            <span><strong>775</strong> repeat purchasers</span>
-                            <span><strong>19.25%</strong> synthetic A/B lift</span>
-                        </div>
-
-                        <p class="project-stack">SQL • Python • pandas • Power BI • DAX • Power Query • PBIP • PBIR • TMDL • Forecasting</p>
-
-                        <div class="project-actions">
-                            <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
-                            <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn">Recruiter Summary</a>
-                        </div>
-
-                        <p class="responsible-note">Synthetic A/B and marketing-spend examples are explicitly labelled as synthetic in the project.</p>
-                    </div>
-                </article>
-                <article class="project-card project-flagship railpartner reveal">
-                    <div class="project-topline">
-                        <span class="project-badge">Analytics Engineering Flagship</span>
-                        <span class="project-number">03</span>
                     </div>
 
                     <div class="project-media">
@@ -341,7 +266,80 @@
                         </p>
                     </div>
                 </article>
+                <article class="project-card project-flagship credit-risk reveal">
+                    <div class="project-topline">
+                        <span class="project-badge">Data Science Flagship</span>
+                        <span class="project-number">02</span>
+                    </div>
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/tosinmulero/credit-risk-explainable-ai/main/reports/figures/21_shap_global_importance.png"
+                             alt="Credit Risk Intelligence SHAP global feature importance" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <p class="project-domain">Machine Learning • Explainable AI • MLOps</p>
+                            <h3>Credit Risk Intelligence & Explainable Default Prediction</h3>
+                            <p>
+                                Production-style credit-risk workflow covering model benchmarking, Optuna tuning,
+                                probability calibration, cost-sensitive thresholding, SHAP explainability,
+                                subgroup auditing, MLflow tracking, FastAPI, Streamlit and CI.
+                            </p>
+                        </div>
 
+                        <div class="project-kpis">
+                            <span><strong>0.7834</strong> ROC-AUC</span>
+                            <span><strong>0.5622</strong> PR-AUC</span>
+                            <span><strong>80.71%</strong> recall</span>
+                            <span><strong>29.1%</strong> illustrative cost reduction</span>
+                        </div>
+
+                        <p class="project-stack">Python • XGBoost • LightGBM • Optuna • SHAP • MLflow • FastAPI • Streamlit • Pytest • GitHub Actions</p>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/MODEL_CARD.md" target="_blank" rel="noopener noreferrer" class="project-btn">Model Card</a>
+                            <a href="https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer" class="project-btn">Architecture</a>
+                        </div>
+
+                        <p class="responsible-note">Portfolio demonstration using a public historical benchmark dataset; not intended for live underwriting decisions.</p>
+                    </div>
+                </article>
+                <article class="project-card project-flagship customer360 reveal">
+                    <div class="project-topline">
+                        <span class="project-badge">Analytics & BI Flagship</span>
+                        <span class="project-number">03</span>
+                    </div>
+                    <div class="project-media">
+                        <img src="images/customer360_executive_overview.png"
+                             alt="Customer 360 and Revenue Growth Analytics executive dashboard" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <p class="project-domain">Commercial Analytics • Power BI • Forecasting</p>
+                            <h3>Customer 360 & Revenue Growth Analytics</h3>
+                            <p>
+                                End-to-end commercial analytics combining SQL, Python, Power BI, customer segmentation,
+                                forecasting and reproducible experimentation.
+                            </p>
+                        </div>
+
+                        <div class="project-kpis">
+                            <span><strong>270,154</strong> customers</span>
+                            <span><strong>362,165</strong> revenue</span>
+                            <span><strong>775</strong> repeat purchasers</span>
+                            <span><strong>19.25%</strong> synthetic A/B lift</span>
+                        </div>
+
+                        <p class="project-stack">SQL • Python • pandas • Power BI • DAX • Power Query • PBIP • PBIR • TMDL • Forecasting</p>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics" target="_blank" rel="noopener noreferrer" class="project-btn primary">Repository ↗</a>
+                            <a href="https://github.com/tosinmulero/customer-360-revenue-growth-analytics/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="project-btn">Recruiter Summary</a>
+                        </div>
+
+                        <p class="responsible-note">Synthetic A/B and marketing-spend examples are explicitly labelled as synthetic in the project.</p>
+                    </div>
+                </article>
             </div>
 
             <div class="project-grid">
