@@ -468,7 +468,7 @@ a {
     width: min(var(--max), calc(100% - 40px));
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     border: 1px solid var(--line);
     border-radius: 20px;
     overflow: hidden;
@@ -1120,4 +1120,14 @@ footer {
         opacity: 1;
         transform: none;
     }
+}
+
+.railpartner::after {
+    background: linear-gradient(
+        90deg,
+        var(--green),
+        var(--cyan),
+        var(--blue),
+        var(--gold)
+    );
 }
