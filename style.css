@@ -1131,3 +1131,67 @@ footer {
         var(--gold)
     );
 }
+
+
+/* ==========================================================
+   RAILPARTNER 360 — PRIMARY FLAGSHIP
+   ========================================================== */
+.primary-flagship {
+    isolation: isolate;
+    border: 1px solid rgba(34, 211, 238, 0.48);
+    background:
+        radial-gradient(circle at 5% 10%, rgba(34, 211, 238, 0.16), transparent 32%),
+        radial-gradient(circle at 95% 90%, rgba(168, 85, 247, 0.17), transparent 35%),
+        linear-gradient(145deg, rgba(10, 22, 42, 0.98), rgba(11, 16, 34, 0.98));
+    box-shadow:
+        0 30px 90px rgba(37, 99, 235, 0.24),
+        0 0 60px rgba(34, 211, 238, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+.primary-flagship::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.7;
+    background: linear-gradient(120deg, transparent, rgba(34,211,238,.06), rgba(99,102,241,.08), transparent);
+}
+.primary-flagship > * { position: relative; z-index: 1; }
+.primary-flagship .project-badge {
+    border-color: rgba(255,255,255,.25);
+    background: linear-gradient(120deg, #0891b2, #2563eb 38%, #7c3aed 70%, #d97706);
+    box-shadow: 0 10px 35px rgba(37,99,235,.34);
+}
+.primary-flagship .project-domain {
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(90deg, #22d3ee, #60a5fa, #c084fc, #fbbf24);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.primary-flagship .project-body h3 { font-size: clamp(1.7rem, 3vw, 2.55rem); }
+.primary-flagship .project-media {
+    background: radial-gradient(circle at 10% 15%, rgba(34,211,238,.14), transparent 30%),
+                linear-gradient(135deg, #ecfeff, #eff6ff 42%, #faf5ff 75%, #fff7ed);
+}
+.primary-flagship .project-kpis span {
+    border-color: rgba(34,211,238,.20);
+    background: linear-gradient(135deg, rgba(34,211,238,.09), rgba(99,102,241,.09));
+}
+.primary-flagship .project-btn.primary {
+    background: linear-gradient(120deg, #0891b2, #2563eb 42%, #7c3aed);
+    box-shadow: 0 12px 28px rgba(37,99,235,.28);
+}
+.primary-flagship::after {
+    height: 5px;
+    opacity: 1;
+    background: linear-gradient(90deg, #22d3ee, #2563eb, #8b5cf6, #ec4899, #f59e0b);
+}
+.flagship-metric {
+    background: linear-gradient(145deg, rgba(34,211,238,.11), rgba(37,99,235,.09));
+    box-shadow: inset 0 0 28px rgba(34,211,238,.05);
+}
+.flagship-impact {
+    background: linear-gradient(135deg, rgba(34,211,238,.10), rgba(99,102,241,.08));
+}
+.flagship-impact strong { color: #67e8f9; }
