@@ -3096,3 +3096,33 @@ button:focus-visible {
     .railsearch-funnel { grid-template-columns: 1fr; }
     .railsearch-stack-visual { gap: 5px; }
 }
+
+
+/* === RAILNEXUS REAL APP SCREENSHOT === */
+.railnexus {
+    grid-template-columns: 1fr;
+}
+
+.railnexus-screenshot-media {
+    min-height: 0;
+    padding: 0;
+    background: #0e1117;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.railnexus-screenshot-media img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
+    object-position: center top;
+    background: #0e1117;
+}
+
+@media (max-width: 640px) {
+    .railnexus-screenshot-media,
+    .railnexus-screenshot-media img {
+        min-height: 0;
+        height: auto;
+    }
+}
