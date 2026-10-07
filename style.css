@@ -468,7 +468,7 @@ a {
     width: min(var(--max), calc(100% - 40px));
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, minmax(0, 1fr));
     border: 1px solid var(--line);
     border-radius: 20px;
     overflow: hidden;
@@ -2033,5 +2033,263 @@ h3 {
 
     .project-number {
         padding-top: 0;
+    }
+}
+
+
+/* ==========================================================
+   RAILSEARCH — PRODUCT DATA SCIENCE FLAGSHIP
+   ========================================================== */
+
+.railsearch {
+    isolation: isolate;
+    border-color: rgba(16, 185, 129, 0.46);
+    background:
+        radial-gradient(circle at 5% 10%, rgba(34, 211, 238, 0.14), transparent 31%),
+        radial-gradient(circle at 95% 90%, rgba(16, 185, 129, 0.16), transparent 34%),
+        radial-gradient(circle at 72% 8%, rgba(99, 102, 241, 0.10), transparent 28%),
+        linear-gradient(145deg, rgba(6, 18, 31, 0.99), rgba(7, 31, 34, 0.98));
+    box-shadow:
+        0 30px 90px rgba(5, 150, 105, 0.20),
+        0 0 65px rgba(34, 211, 238, 0.07),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.railsearch::after {
+    height: 5px;
+    opacity: 1;
+    background: linear-gradient(90deg, #22d3ee, #3b82f6, #6366f1, #10b981, #34d399);
+}
+
+.railsearch .project-badge {
+    border-color: rgba(255, 255, 255, 0.28);
+    background: linear-gradient(110deg, #0891b2, #2563eb 34%, #4f46e5 58%, #059669);
+    box-shadow: 0 12px 38px rgba(5, 150, 105, 0.28);
+}
+
+.railsearch .project-domain {
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(90deg, #67e8f9, #60a5fa, #818cf8, #34d399);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.railsearch-media {
+    padding: 28px;
+    background:
+        radial-gradient(circle at 15% 15%, rgba(34, 211, 238, 0.18), transparent 30%),
+        radial-gradient(circle at 85% 80%, rgba(16, 185, 129, 0.20), transparent 34%),
+        linear-gradient(145deg, #050816, #08172d 50%, #05251e);
+}
+
+.railsearch-visual {
+    width: min(100%, 640px);
+    min-height: 430px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 26px;
+    color: #eaf3ff;
+    background:
+        radial-gradient(circle at 8% 4%, rgba(34, 211, 238, 0.12), transparent 30%),
+        radial-gradient(circle at 100% 100%, rgba(16, 185, 129, 0.15), transparent 36%),
+        rgba(5, 10, 25, 0.88);
+    box-shadow:
+        0 28px 80px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.railsearch-logo-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.railsearch-logo {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    border-radius: 18px;
+    color: #ffffff;
+    font-size: 1.18rem;
+    font-weight: 950;
+    background: linear-gradient(135deg, #06b6d4, #2563eb, #059669);
+    box-shadow: 0 12px 35px rgba(5, 150, 105, 0.31);
+}
+
+.railsearch-logo-row strong {
+    display: block;
+    font-size: 1.72rem;
+    letter-spacing: -0.04em;
+}
+
+.railsearch-logo-row small {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.63rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+}
+
+.railsearch-funnel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.railsearch-funnel span {
+    flex: 1;
+    min-width: 0;
+    padding: 11px 7px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.64rem;
+    font-weight: 900;
+    background: rgba(255, 255, 255, 0.045);
+}
+
+.railsearch-funnel span:nth-of-type(1) { color: #67e8f9; }
+.railsearch-funnel span:nth-of-type(2) { color: #60a5fa; }
+.railsearch-funnel span:nth-of-type(3) { color: #a5b4fc; }
+.railsearch-funnel span:nth-of-type(4) { color: #6ee7b7; }
+.railsearch-funnel b { color: #64748b; }
+
+.railsearch-signals {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.railsearch-signals div {
+    padding: 14px 12px;
+    border: 1px solid rgba(16, 185, 129, 0.18);
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(34, 211, 238, 0.06), rgba(16, 185, 129, 0.10));
+}
+
+.railsearch-signals small {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.58rem;
+    font-weight: 900;
+    letter-spacing: 0.10em;
+}
+
+.railsearch-signals strong {
+    display: block;
+    margin-top: 4px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    letter-spacing: -0.03em;
+}
+
+.railsearch-stack-visual {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.railsearch-stack-visual span {
+    padding: 7px 10px;
+    border: 1px solid rgba(34, 211, 238, 0.14);
+    border-radius: 999px;
+    color: #cbd5e1;
+    background: rgba(15, 23, 42, 0.74);
+    font-size: 0.66rem;
+    font-weight: 800;
+}
+
+.railsearch-alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #86efac;
+    text-align: center;
+    font-size: 0.67rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.railsearch-alert-dot {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: #34d399;
+    box-shadow: 0 0 0 5px rgba(52, 211, 153, 0.09);
+}
+
+.railsearch-impact {
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(16, 185, 129, 0.10));
+}
+
+.railsearch-impact strong {
+    color: #6ee7b7;
+}
+
+@media (max-width: 640px) {
+    .railsearch-media {
+        padding: 14px;
+    }
+
+    .railsearch-visual {
+        width: 100%;
+        min-height: 0;
+        padding: 18px;
+        gap: 18px;
+        border-radius: 18px;
+    }
+
+    .railsearch-logo {
+        width: 52px;
+        height: 52px;
+        border-radius: 15px;
+    }
+
+    .railsearch-logo-row strong {
+        font-size: 1.45rem;
+    }
+
+    .railsearch-logo-row small {
+        font-size: 0.57rem;
+        letter-spacing: 0.10em;
+    }
+
+    .railsearch-funnel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .railsearch-funnel b {
+        display: none;
+    }
+
+    .railsearch-signals {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .railsearch-stack-visual {
+        gap: 6px;
+    }
+
+    .railsearch-stack-visual span {
+        padding: 6px 8px;
+        font-size: 0.63rem;
+    }
+
+    .railsearch-alert {
+        font-size: 0.61rem;
+        line-height: 1.45;
     }
 }
