@@ -2714,3 +2714,385 @@ footer {
         transition-duration: 0.001ms !important;
     }
 }
+
+
+/* === PORTFOLIO SYSTEM 2026: SYNCHRONIZED BRAND + MOBILE === */
+:root {
+    --teal: #14b8a6;
+    --pink: #ec4899;
+    --orange: #f97316;
+    --violet: #8b5cf6;
+    --surface-glow: rgba(255, 255, 255, 0.055);
+    color-scheme: dark;
+}
+
+body {
+    background:
+        radial-gradient(circle at 8% 8%, rgba(34, 211, 238, 0.18), transparent 28rem),
+        radial-gradient(circle at 92% 14%, rgba(236, 72, 153, 0.13), transparent 25rem),
+        radial-gradient(circle at 82% 70%, rgba(139, 92, 246, 0.13), transparent 30rem),
+        radial-gradient(circle at 18% 88%, rgba(20, 184, 166, 0.12), transparent 28rem),
+        #050713;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        linear-gradient(120deg, rgba(34,211,238,.035), transparent 25%, rgba(139,92,246,.035) 55%, transparent 80%),
+        radial-gradient(circle at 50% -10%, rgba(255,255,255,.06), transparent 25rem);
+}
+
+.navbar {
+    border-color: rgba(125, 211, 252, 0.20);
+    background: linear-gradient(110deg, rgba(6,8,22,.90), rgba(13,18,42,.88));
+}
+
+.brand-mark {
+    background: linear-gradient(135deg, #22d3ee, #3b82f6 35%, #8b5cf6 66%, #ec4899);
+}
+
+.btn-featured {
+    color: #fff;
+    border-color: rgba(236,72,153,.42);
+    background: linear-gradient(135deg, rgba(236,72,153,.22), rgba(139,92,246,.25));
+    box-shadow: 0 12px 34px rgba(236,72,153,.15);
+}
+
+.hero-panel {
+    border-color: rgba(34,211,238,.24);
+    background:
+        radial-gradient(circle at 10% 0%, rgba(34,211,238,.10), transparent 32%),
+        radial-gradient(circle at 100% 100%, rgba(236,72,153,.10), transparent 35%),
+        linear-gradient(180deg, rgba(15,23,42,.88), rgba(7,10,24,.92));
+}
+
+.mini-dashboard {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.metric-tile {
+    position: relative;
+    overflow: hidden;
+    transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.metric-tile::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: -38px;
+    bottom: -44px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: .05;
+}
+
+.metric-tile:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,.22);
+}
+
+.accent-emerald { border-top: 3px solid #10b981; }
+.accent-pink { border-top: 3px solid var(--pink); }
+.accent-rainbow {
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, #22d3ee, #3b82f6, #8b5cf6, #ec4899, #f59e0b) 1;
+}
+.featured-metric {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(34,211,238,.10), rgba(139,92,246,.10), rgba(236,72,153,.08));
+}
+
+.impact-strip {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-color: rgba(125,211,252,.16);
+    background:
+        linear-gradient(115deg, rgba(34,211,238,.04), rgba(139,92,246,.04), rgba(236,72,153,.035)),
+        rgba(12,18,36,.80);
+}
+
+.impact-item {
+    border-bottom: 1px solid var(--line);
+}
+.impact-item:nth-child(4n) { border-right: 0; }
+.railnexus-impact {
+    background: linear-gradient(135deg, rgba(34,211,238,.09), rgba(139,92,246,.09), rgba(236,72,153,.08));
+}
+.railnexus-impact strong { color: #67e8f9; }
+
+.about-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.pillar-experiment {
+    border-color: rgba(236,72,153,.22);
+    background:
+        radial-gradient(circle at 100% 0%, rgba(236,72,153,.10), transparent 45%),
+        linear-gradient(180deg, rgba(19,29,52,.84), rgba(9,14,28,.84));
+}
+
+.project-card {
+    border-color: rgba(148,163,184,.20);
+    box-shadow:
+        0 28px 75px rgba(0,0,0,.30),
+        inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.railnexus {
+    isolation: isolate;
+    border-color: rgba(34,211,238,.48);
+    background:
+        radial-gradient(circle at 0% 0%, rgba(34,211,238,.18), transparent 30%),
+        radial-gradient(circle at 100% 15%, rgba(236,72,153,.13), transparent 31%),
+        radial-gradient(circle at 80% 100%, rgba(139,92,246,.17), transparent 36%),
+        linear-gradient(145deg, rgba(5,14,29,.99), rgba(13,10,34,.98));
+    box-shadow:
+        0 34px 100px rgba(37,99,235,.22),
+        0 0 78px rgba(236,72,153,.08),
+        inset 0 1px 0 rgba(255,255,255,.06);
+}
+.railnexus::after {
+    height: 6px;
+    opacity: 1;
+    background: linear-gradient(90deg, #22d3ee, #3b82f6, #8b5cf6, #ec4899, #f59e0b);
+}
+.railnexus .project-badge {
+    border-color: rgba(255,255,255,.28);
+    background: linear-gradient(110deg, #0891b2, #2563eb 28%, #7c3aed 58%, #db2777 82%, #d97706);
+    box-shadow: 0 14px 38px rgba(124,58,237,.26);
+}
+.railnexus .project-domain {
+    color: transparent;
+    background: linear-gradient(90deg, #67e8f9, #60a5fa, #c4b5fd, #f9a8d4, #fcd34d);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.railnexus .railsearch-media {
+    background:
+        radial-gradient(circle at 10% 5%, rgba(34,211,238,.20), transparent 30%),
+        radial-gradient(circle at 90% 90%, rgba(236,72,153,.16), transparent 33%),
+        linear-gradient(145deg, #040713, #071a2d 45%, #170b27);
+}
+.railnexus .railsearch-logo {
+    background: linear-gradient(135deg, #06b6d4, #2563eb 32%, #7c3aed 66%, #db2777);
+    box-shadow: 0 14px 38px rgba(124,58,237,.32);
+}
+.railnexus .railsearch-signals div {
+    border-color: rgba(167,139,250,.20);
+    background: linear-gradient(145deg, rgba(34,211,238,.07), rgba(124,58,237,.10), rgba(236,72,153,.06));
+}
+.railnexus .railsearch-stack-visual span {
+    border-color: rgba(167,139,250,.18);
+}
+.railnexus .railsearch-alert {
+    color: #f0abfc;
+}
+.railnexus .railsearch-alert-dot {
+    background: #ec4899;
+    box-shadow: 0 0 0 5px rgba(236,72,153,.10);
+}
+
+.project-btn,
+.btn,
+.nav-links a,
+.nav-cta,
+.nav-toggle {
+    min-height: 44px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid rgba(103,232,249,.88);
+    outline-offset: 3px;
+}
+
+@media (max-width: 1050px) {
+    .impact-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .impact-item:nth-child(4n) { border-right: 1px solid var(--line); }
+    .impact-item:nth-child(2n) { border-right: 0; }
+}
+
+@media (max-width: 860px) {
+    .navbar {
+        width: 100%;
+        border-radius: 16px;
+    }
+    .nav-links {
+        max-height: calc(100dvh - 108px);
+        overflow-y: auto;
+    }
+    .hero {
+        padding-top: 72px;
+    }
+    .hero-grid {
+        gap: 42px;
+    }
+    .project-flagship {
+        grid-template-columns: 1fr;
+    }
+    .railsearch-visual {
+        min-height: 390px;
+    }
+}
+
+@media (max-width: 640px) {
+    html { scroll-padding-top: 76px; }
+    .site-header { padding: 8px 8px 0; }
+    .navbar { min-height: 60px; padding: 8px 10px; }
+    .brand-mark { width: 38px; height: 38px; border-radius: 11px; }
+    .section-shell {
+        width: calc(100% - 20px);
+        padding: 66px 0;
+    }
+    .hero {
+        padding-top: 70px;
+        padding-bottom: 58px;
+    }
+    .hero h1 {
+        font-size: clamp(2.65rem, 13.5vw, 4.15rem);
+        line-height: 1.00;
+        letter-spacing: -0.05em;
+    }
+    .hero-description {
+        font-size: .98rem;
+        line-height: 1.72;
+    }
+    .hero-actions,
+    .contact-actions,
+    .project-actions {
+        gap: 10px;
+    }
+    .hero-proof {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    .hero-proof span {
+        min-width: 0;
+        padding: 10px 11px;
+        font-size: .76rem;
+    }
+    .hero-panel { padding: 12px; }
+    .mini-dashboard { grid-template-columns: 1fr 1fr; }
+    .featured-metric { grid-column: 1 / -1; }
+    .metric-tile { min-height: 104px; padding: 12px; }
+    .metric-tile strong { font-size: 1.35rem; }
+
+    .impact-strip {
+        width: calc(100% - 20px);
+        grid-template-columns: 1fr 1fr;
+        border-radius: 16px;
+    }
+    .impact-item {
+        padding: 17px 10px;
+    }
+    .impact-item strong { font-size: 1.24rem; }
+    .impact-item span { font-size: .70rem; }
+
+    .about-grid,
+    .capability-grid,
+    .standards-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .glass-card,
+    .capability-card,
+    .standard-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .project-card { border-radius: 20px; }
+    .project-topline {
+        position: static;
+        padding: 14px 14px 0;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    .project-badge {
+        max-width: calc(100% - 44px);
+        white-space: normal;
+        line-height: 1.35;
+        font-size: .62rem;
+    }
+    .project-number { padding-top: 7px; }
+    .project-media,
+    .compact .project-media {
+        min-height: 250px;
+        height: auto;
+        margin-top: 12px;
+    }
+    .railsearch-media { padding: 14px; }
+    .railsearch-visual {
+        min-height: 0;
+        padding: 18px;
+        gap: 16px;
+        border-radius: 18px;
+    }
+    .railsearch-logo { width: 48px; height: 48px; border-radius: 14px; }
+    .railsearch-logo-row strong { font-size: 1.32rem; }
+    .railsearch-logo-row small { font-size: .55rem; letter-spacing: .10em; }
+    .railsearch-funnel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .railsearch-funnel b { display: none; }
+    .railsearch-signals { grid-template-columns: 1fr 1fr; }
+    .railsearch-signals strong { font-size: 1.08rem; }
+    .railsearch-stack-visual span { font-size: .60rem; padding: 6px 8px; }
+
+    .project-body,
+    .compact .project-body {
+        padding: 20px 16px 24px;
+    }
+    .project-body h3 {
+        font-size: clamp(1.4rem, 8vw, 1.85rem);
+    }
+    .project-kpis {
+        grid-template-columns: 1fr 1fr;
+    }
+    .project-kpis span {
+        padding: 10px;
+        font-size: .72rem;
+    }
+    .project-actions .project-btn {
+        width: 100%;
+        min-height: 46px;
+    }
+    .responsible-note { font-size: .72rem; }
+
+    .contact-card,
+    .education-card {
+        padding: 24px 18px;
+        border-radius: 20px;
+    }
+    .footer-inner {
+        width: calc(100% - 20px);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero-proof,
+    .mini-dashboard,
+    .impact-strip,
+    .project-kpis,
+    .railsearch-signals {
+        grid-template-columns: 1fr;
+    }
+    .featured-metric { grid-column: auto; }
+    .project-badge { max-width: 100%; }
+    .project-topline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .project-number { padding-top: 0; }
+    .railsearch-funnel { grid-template-columns: 1fr; }
+    .railsearch-stack-visual { gap: 5px; }
+}
