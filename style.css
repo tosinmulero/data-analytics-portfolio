@@ -1195,3 +1195,372 @@ footer {
     background: linear-gradient(135deg, rgba(34,211,238,.10), rgba(99,102,241,.08));
 }
 .flagship-impact strong { color: #67e8f9; }
+
+
+/* ==========================================================
+   RAILFLOW — DATA & ML ENGINEERING FLAGSHIP
+   ========================================================== */
+
+.railflow {
+    border-color: rgba(139, 92, 246, 0.46);
+
+    background:
+        radial-gradient(
+            circle at 5% 10%,
+            rgba(34, 211, 238, 0.14),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 95% 90%,
+            rgba(245, 158, 11, 0.13),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 70% 10%,
+            rgba(236, 72, 153, 0.09),
+            transparent 28%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(9, 16, 35, 0.99),
+            rgba(17, 13, 42, 0.99)
+        );
+
+    box-shadow:
+        0 30px 90px rgba(124, 58, 237, 0.23),
+        0 0 65px rgba(34, 211, 238, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.railflow::after {
+    height: 5px;
+    opacity: 1;
+
+    background: linear-gradient(
+        90deg,
+        #22d3ee,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899,
+        #f59e0b,
+        #10b981
+    );
+}
+
+.railflow .project-badge {
+    border-color: rgba(255, 255, 255, 0.30);
+
+    background: linear-gradient(
+        110deg,
+        #0891b2,
+        #2563eb 30%,
+        #7c3aed 58%,
+        #db2777 78%,
+        #d97706
+    );
+
+    box-shadow:
+        0 12px 38px rgba(124, 58, 237, 0.34);
+}
+
+.railflow .project-domain {
+    display: inline-block;
+
+    color: transparent;
+
+    background: linear-gradient(
+        90deg,
+        #22d3ee,
+        #60a5fa,
+        #c084fc,
+        #f472b6,
+        #fbbf24
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.railflow-media {
+    padding: 28px;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(34, 211, 238, 0.19),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(168, 85, 247, 0.21),
+            transparent 32%
+        ),
+        linear-gradient(
+            145deg,
+            #050816,
+            #0d1630 48%,
+            #160c32
+        );
+}
+
+.railflow-visual {
+    width: min(100%, 620px);
+    min-height: 430px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 24px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 26px;
+
+    color: #eaf3ff;
+
+    background:
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(34, 211, 238, 0.13),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(245, 158, 11, 0.13),
+            transparent 35%
+        ),
+        rgba(5, 10, 25, 0.84);
+
+    box-shadow:
+        0 28px 80px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.railflow-logo-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.railflow-logo {
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 18px;
+
+    color: #ffffff;
+
+    font-size: 1.25rem;
+    font-weight: 950;
+
+    background: linear-gradient(
+        135deg,
+        #06b6d4,
+        #2563eb,
+        #7c3aed
+    );
+
+    box-shadow:
+        0 12px 35px rgba(37, 99, 235, 0.36);
+}
+
+.railflow-logo-row strong {
+    display: block;
+
+    font-size: 1.72rem;
+
+    letter-spacing: -0.04em;
+}
+
+.railflow-logo-row small {
+    color: #94a3b8;
+
+    font-size: 0.68rem;
+    font-weight: 900;
+
+    letter-spacing: 0.18em;
+}
+
+.railflow-architecture {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 7px;
+}
+
+.railflow-architecture span {
+    flex: 1;
+
+    padding: 11px 8px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 0.67rem;
+    font-weight: 900;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+}
+
+.railflow-architecture span:nth-of-type(1) {
+    color: #67e8f9;
+}
+
+.railflow-architecture span:nth-of-type(2) {
+    color: #60a5fa;
+}
+
+.railflow-architecture span:nth-of-type(3) {
+    color: #c084fc;
+}
+
+.railflow-architecture span:nth-of-type(4) {
+    color: #fbbf24;
+}
+
+.railflow-architecture b {
+    color: #64748b;
+}
+
+.railflow-stack-visual {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.railflow-stack-visual span {
+    padding: 7px 10px;
+
+    border:
+        1px solid rgba(34, 211, 238, 0.14);
+
+    border-radius: 999px;
+
+    color: #cbd5e1;
+
+    background:
+        rgba(15, 23, 42, 0.74);
+
+    font-size: 0.68rem;
+    font-weight: 800;
+}
+
+.railflow-cloud {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 9px;
+}
+
+.railflow-cloud div {
+    padding: 14px 10px;
+
+    border:
+        1px solid rgba(139, 92, 246, 0.19);
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        rgba(34, 211, 238, 0.06),
+        rgba(139, 92, 246, 0.10)
+    );
+}
+
+.railflow-cloud strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 1.4rem;
+}
+
+.railflow-cloud span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 0.62rem;
+}
+
+.railflow-visual > p {
+    margin: 0;
+
+    text-align: center;
+
+    color: #86efac;
+
+    font-size: 0.70rem;
+    font-weight: 900;
+
+    letter-spacing: 0.06em;
+
+    text-transform: uppercase;
+}
+
+.railflow-mini {
+    background: linear-gradient(
+        145deg,
+        rgba(34, 211, 238, 0.10),
+        rgba(139, 92, 246, 0.12),
+        rgba(245, 158, 11, 0.07)
+    );
+}
+
+.railflow-impact {
+    background: linear-gradient(
+        135deg,
+        rgba(34, 211, 238, 0.08),
+        rgba(139, 92, 246, 0.09)
+    );
+}
+
+.railflow-impact strong {
+    color: #c084fc;
+}
+
+@media (max-width: 640px) {
+    .railflow-media {
+        padding: 16px;
+    }
+
+    .railflow-visual {
+        min-height: 390px;
+        padding: 20px;
+    }
+
+    .railflow-architecture {
+        display: grid;
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .railflow-architecture b {
+        display: none;
+    }
+
+    .railflow-cloud {
+        grid-template-columns: 1fr;
+    }
+}
