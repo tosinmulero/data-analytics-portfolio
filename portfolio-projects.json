@@ -5,8 +5,8 @@
     {
       "slug": "nhs-primary-care-intelligence-platform",
       "title": "NHS Primary Care Data Management & Clinical Intelligence Platform",
-      "domain": "Primary Care Data Administration â€¢ Healthcare Analytics â€¢ Data Engineering â€¢ Power BI",
-      "badge": "Latest project Â· Healthcare Analytics Â· 2026",
+      "domain": "Primary Care Data Administration • Healthcare Analytics • Data Engineering • Power BI",
+      "badge": "Latest project · Healthcare Analytics · 2026",
       "description": "End-to-end, independently developed, entirely synthetic GP practice data platform demonstrating patient registration quality, simulated clinical correspondence and pathology review queues, governed SQL and dbt transformations, and six colourful Power BI reporting pages.",
       "metrics": [
         [
@@ -26,7 +26,7 @@
           "6"
         ]
       ],
-      "stack": "Python â€¢ PostgreSQL â€¢ SQL â€¢ pandas â€¢ Pydantic â€¢ pytest â€¢ dbt â€¢ DAX â€¢ Power BI â€¢ PBIP â€¢ PBIR â€¢ TMDL â€¢ GitHub",
+      "stack": "Python • PostgreSQL • SQL • pandas • Pydantic • pytest • dbt • DAX • Power BI • PBIP • PBIR • TMDL • GitHub",
       "note": "Independent synthetic demonstration only. Not affiliated with or endorsed by the NHS or Guide Post Medical Group. No real patient data, NHS connections, clinical decisions or validated QOF results.",
       "image": "https://raw.githubusercontent.com/tosinmulero/nhs-primary-care-intelligence-platform/main/docs/images/page-01-executive.png",
       "links": [
