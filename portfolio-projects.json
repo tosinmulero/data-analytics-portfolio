@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "ordering": "newest-completed-project-first",
+  "projects": [
+    {
+      "slug": "nhs-primary-care-intelligence-platform",
+      "title": "NHS Primary Care Data Management & Clinical Intelligence Platform",
+      "domain": "Primary Care Data Administration â€¢ Healthcare Analytics â€¢ Data Engineering â€¢ Power BI",
+      "badge": "Latest project Â· Healthcare Analytics Â· 2026",
+      "description": "End-to-end, independently developed, entirely synthetic GP practice data platform demonstrating patient registration quality, simulated clinical correspondence and pathology review queues, governed SQL and dbt transformations, and six colourful Power BI reporting pages.",
+      "metrics": [
+        [
+          "fictional patients",
+          "8,000"
+        ],
+        [
+          "appointments",
+          "20,000"
+        ],
+        [
+          "simulated review cases",
+          "4,749"
+        ],
+        [
+          "Power BI pages",
+          "6"
+        ]
+      ],
+      "stack": "Python â€¢ PostgreSQL â€¢ SQL â€¢ pandas â€¢ Pydantic â€¢ pytest â€¢ dbt â€¢ DAX â€¢ Power BI â€¢ PBIP â€¢ PBIR â€¢ TMDL â€¢ GitHub",
+      "note": "Independent synthetic demonstration only. Not affiliated with or endorsed by the NHS or Guide Post Medical Group. No real patient data, NHS connections, clinical decisions or validated QOF results.",
+      "image": "https://raw.githubusercontent.com/tosinmulero/nhs-primary-care-intelligence-platform/main/docs/images/page-01-executive.png",
+      "links": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/tosinmulero/nhs-primary-care-intelligence-platform"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://github.com/tosinmulero/nhs-primary-care-intelligence-platform#architecture"
+        },
+        {
+          "label": "Six dashboards",
+          "url": "https://github.com/tosinmulero/nhs-primary-care-intelligence-platform#all-six-pages"
+        }
+      ],
+      "position": 1
+    },
+    {
+      "slug": "railnexus-b2b-product-growth-intelligence",
+      "title": "RailNexus — B2B Product Growth, Experimentation & Network Intelligence",
+      "domain": "B2B Product Analytics • Experimentation • Data Science • Responsible AI",
+      "badge": "Featured Portfolio Project • B2B Product Data Science",
+      "description": "End-to-end synthetic B2B rail product-intelligence platform combining partner growth analytics, rigorous experimentation, graph/geospatial opportunity analysis, predictive modelling, partner segmentation, responsible-AI investigation and production engineering.",
+      "metrics": [
+        [
+          "sessions",
+          "10,000"
+        ],
+        [
+          "active B2B partners",
+          "600"
+        ],
+        [
+          "directed routes",
+          "11,822"
+        ],
+        [
+          "top-decile lift",
+          "1.257×"
+        ]
+      ],
+      "stack": "Python • pandas • SQL • DuckDB • SciPy • statsmodels • scikit-learn • NetworkX • Plotly • Streamlit • FastAPI • Pydantic • Docker • GitHub Actions",
+      "note": "All partner, traveller, route, commercial and experiment values are synthetic. No proprietary Trainline or customer data is used. Experiment and opportunity outputs are not presented as actual Trainline business impact.",
+      "image": "https://raw.githubusercontent.com/tosinmulero/railnexus-b2b-product-growth-intelligence/main/docs/screenshots/01_executive_overview.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence"
+        },
+        {
+          "label": "Case Study",
+          "url": "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence/blob/main/docs/CASE_STUDY.md"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence/blob/main/docs/ARCHITECTURE.md"
+        },
+        {
+          "label": "Visual Gallery",
+          "url": "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence/tree/main/docs/screenshots"
+        }
+      ],
+      "position": 2
+    },
+    {
+      "slug": "railpartner-360",
+      "title": "RailPartner 360 — B2B Rail Retail & Customer Intelligence",
+      "domain": "Analytics Engineering • B2B Rail • Power BI",
+      "badge": "Primary Flagship • Analytics Engineering",
+      "description": "End-to-end rail retail analytics platform combining PostgreSQL, dbt, Python and Power BI to analyse customer conversion, B2B partner performance, route reliability, operational disruption and refund-related commercial exposure.",
+      "metrics": [
+        [
+          "searches",
+          "6.00M"
+        ],
+        [
+          "bookings",
+          "2.00M"
+        ],
+        [
+          "platform revenue",
+          "£9.03M"
+        ],
+        [
+          "B2B booking share",
+          "63.86%"
+        ]
+      ],
+      "stack": "PostgreSQL • SQL • dbt • Python • pandas • Power BI • DAX • PBIP • PBIR • TMDL • Analytics Engineering",
+      "note": "Transaction-level rail data is synthetic and contains no proprietary Trainline or customer data.",
+      "image": "https://tosinmulero.github.io/data-analytics-portfolio/images/railpartner360_executive_overview.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/railpartner-360"
+        },
+        {
+          "label": "Case Study",
+          "url": "https://github.com/tosinmulero/railpartner-360#readme"
+        },
+        {
+          "label": "Dashboard Spec",
+          "url": "https://github.com/tosinmulero/railpartner-360/blob/main/powerbi/docs/dashboard_specification.md"
+        },
+        {
+          "label": "Visual Gallery",
+          "url": "https://github.com/tosinmulero/railpartner-360/tree/main/docs/screenshots"
+        }
+      ],
+      "position": 3
+    },
+    {
+      "slug": "railflow-ml-data-platform",
+      "title": "RailFlow ML Data Platform",
+      "domain": "Data Engineering • MLOps • Cloud Engineering",
+      "badge": "Data & ML Engineering Flagship",
+      "description": "End-to-end UK rail data and machine-learning platform spanning medallion data engineering, dbt analytics, Airflow orchestration, MLflow model governance, secure FastAPI serving, Docker, GitHub Actions, Terraform and AWS ECS/Fargate.",
+      "metrics": [
+        [
+          "validated station records",
+          "2,593"
+        ],
+        [
+          "dbt build passes",
+          "29"
+        ],
+        [
+          "pytest passes",
+          "38"
+        ],
+        [
+          "AWS resources provisioned",
+          "25"
+        ]
+      ],
+      "stack": "Python • PySpark • SQL • dbt • Airflow • MLflow • scikit-learn • FastAPI • Docker • GitHub Actions • Terraform • AWS ECS/Fargate",
+      "note": "AWS ECS/Fargate deployment was successfully verified end-to-end. The portfolio environment is intentionally ephemeral so cloud infrastructure can be destroyed after validation to control recurring cost.",
+      "image": "https://tosinmulero.github.io/data-analytics-portfolio/images/railflow_platform_architecture.svg",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/railflow-ml-data-platform"
+        },
+        {
+          "label": "Deployment Evidence",
+          "url": "https://github.com/tosinmulero/railflow-ml-data-platform/blob/main/docs/deployment-evidence.md"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://github.com/tosinmulero/railflow-ml-data-platform/blob/main/docs/architecture/railflow-platform.md"
+        },
+        {
+          "label": "Visual Gallery",
+          "url": "https://github.com/tosinmulero/railflow-ml-data-platform/tree/main/docs/screenshots"
+        }
+      ],
+      "position": 4
+    },
+    {
+      "slug": "railsearch-customer-journey-intelligence",
+      "title": "RailSearch — Customer Journey & Conversion Intelligence",
+      "domain": "Product Analytics • Data Science • Machine Learning • MLOps",
+      "badge": "Product Data Science Flagship",
+      "description": "Production-style digital rail product-intelligence platform covering search-to-book funnel analytics, zero-result and checkout-friction investigation, statistical incident analysis, anomaly detection, leakage-aware temporal conversion modelling, explainability and production scoring through FastAPI.",
+      "metrics": [
+        [
+          "searches analysed",
+          "260,724"
+        ],
+        [
+          "bookings",
+          "77,759"
+        ],
+        [
+          "top-decile booking rate",
+          "41.43%"
+        ],
+        [
+          "top-decile lift",
+          "1.386×"
+        ]
+      ],
+      "stack": "Python • pandas • SQL • DuckDB • Parquet • scikit-learn • SciPy • statsmodels • FastAPI • Pydantic • Docker • pytest • Ruff • GitHub Actions",
+      "note": "Synthetic customer-journey data is used throughout. No proprietary Trainline data is included. Commercial-impact values are simulated analytical estimates.",
+      "image": "https://raw.githubusercontent.com/tosinmulero/railsearch-customer-journey-intelligence/main/reports/figures/daily_conversion_rate.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/railsearch-customer-journey-intelligence"
+        },
+        {
+          "label": "Executive Findings",
+          "url": "https://github.com/tosinmulero/railsearch-customer-journey-intelligence/blob/main/reports/STAGE3_EXECUTIVE_FINDINGS.md"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://github.com/tosinmulero/railsearch-customer-journey-intelligence/blob/main/docs/ARCHITECTURE.md"
+        },
+        {
+          "label": "Visual Gallery",
+          "url": "https://github.com/tosinmulero/railsearch-customer-journey-intelligence/tree/main/reports/figures"
+        }
+      ],
+      "position": 5
+    },
+    {
+      "slug": "credit-risk-explainable-ai",
+      "title": "Credit Risk Intelligence & Explainable Default Prediction",
+      "domain": "Machine Learning • Explainable AI • MLOps",
+      "badge": "Data Science Flagship",
+      "description": "Production-style credit-risk workflow covering model benchmarking, Optuna tuning, probability calibration, cost-sensitive thresholding, SHAP explainability, subgroup auditing, MLflow tracking, FastAPI, Streamlit and CI.",
+      "metrics": [
+        [
+          "ROC-AUC",
+          "0.7834"
+        ],
+        [
+          "PR-AUC",
+          "0.5622"
+        ],
+        [
+          "recall",
+          "80.71%"
+        ],
+        [
+          "illustrative cost reduction",
+          "29.1%"
+        ]
+      ],
+      "stack": "Python • XGBoost • LightGBM • Optuna • SHAP • MLflow • FastAPI • Streamlit • Pytest • GitHub Actions",
+      "note": "Portfolio demonstration using a public historical benchmark dataset; not intended for live underwriting decisions.",
+      "image": "https://raw.githubusercontent.com/tosinmulero/credit-risk-explainable-ai/main/reports/figures/21_shap_global_importance.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/credit-risk-explainable-ai"
+        },
+        {
+          "label": "Model Card",
+          "url": "https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/MODEL_CARD.md"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/ARCHITECTURE.md"
+        },
+        {
+          "label": "Visual Gallery",
+          "url": "https://github.com/tosinmulero/credit-risk-explainable-ai/tree/main/reports/figures"
+        }
+      ],
+      "position": 6
+    },
+    {
+      "slug": "customer-360-revenue-growth-analytics",
+      "title": "Customer 360 & Revenue Growth Analytics",
+      "domain": "Commercial Analytics • Power BI • Forecasting",
+      "badge": "Analytics & BI Flagship",
+      "description": "End-to-end commercial analytics combining SQL, Python, Power BI, customer segmentation, forecasting and reproducible experimentation.",
+      "metrics": [
+        [
+          "customers",
+          "270,154"
+        ],
+        [
+          "purchasing customers",
+          "4,419"
+        ],
+        [
+          "repeat purchasers",
+          "775"
+        ],
+        [
+          "synthetic A/B lift",
+          "19.25%"
+        ]
+      ],
+      "stack": "SQL • Python • pandas • Power BI • DAX • Power Query • PBIP • PBIR • TMDL • Forecasting",
+      "note": "Synthetic A/B and marketing-spend examples are explicitly labelled as synthetic in the project.",
+      "image": "https://tosinmulero.github.io/data-analytics-portfolio/images/customer360_executive_overview.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/customer-360-revenue-growth-analytics"
+        },
+        {
+          "label": "Recruiter Summary",
+          "url": "https://github.com/tosinmulero/customer-360-revenue-growth-analytics/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        },
+        {
+          "label": "Visual Gallery",
+          "url": "https://github.com/tosinmulero/customer-360-revenue-growth-analytics/tree/main/images/powerbi"
+        }
+      ],
+      "position": 7
+    },
+    {
+      "slug": "nhs-hospital-performance-analysis",
+      "title": "NHS Hospital Performance & Patient Flow",
+      "domain": "Healthcare Analytics • SQL • Power BI",
+      "badge": "Healthcare Analytics",
+      "description": "Provider benchmarking, four-hour performance, 12-hour waits, regional variation and patient-flow analysis.",
+      "metrics": [
+        [
+          "provider-month rows",
+          "956"
+        ],
+        [
+          "provider codes",
+          "192"
+        ],
+        [
+          "Type 1 benchmarked",
+          "120"
+        ]
+      ],
+      "stack": "Python • PostgreSQL • SQL • Power BI • DAX • Power Query",
+      "note": "",
+      "image": "https://raw.githubusercontent.com/tosinmulero/nhs-hospital-performance-analysis/main/images/nhs_dashboard_overview.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/nhs-hospital-performance-analysis"
+        },
+        {
+          "label": "Summary",
+          "url": "https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        }
+      ],
+      "position": 8
+    },
+    {
+      "slug": "olist-ecommerce-analysis",
+      "title": "Olist E-Commerce Analytics",
+      "domain": "E-Commerce • RFM • Logistics",
+      "badge": "Commercial Analytics",
+      "description": "Commercial, customer, logistics and retention analytics with PostgreSQL, SQL, Power BI and RFM segmentation.",
+      "metrics": [
+        [
+          "delivered orders",
+          "96,211"
+        ],
+        [
+          "order value",
+          "R$15.37M"
+        ],
+        [
+          "repeat rate",
+          "3.00%"
+        ]
+      ],
+      "stack": "PostgreSQL • SQL • Power BI • DAX • RFM • Logistics Analytics",
+      "note": "",
+      "image": "https://raw.githubusercontent.com/tosinmulero/olist-ecommerce-analysis/main/images/olist_dashboard.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/olist-ecommerce-analysis"
+        },
+        {
+          "label": "Summary",
+          "url": "https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        }
+      ],
+      "position": 9
+    },
+    {
+      "slug": "cyclistic-rider-behaviour-analysis",
+      "title": "Cyclistic Rider Behaviour Analysis",
+      "domain": "Mobility Analytics • Behaviour • Power BI",
+      "badge": "Mobility Analytics",
+      "description": "Large-scale bike-share analysis comparing member and casual rider patterns across time, duration and seasonality.",
+      "metrics": [
+        [
+          "rides",
+          "5.93M"
+        ],
+        [
+          "members",
+          "64.36%"
+        ],
+        [
+          "casual avg.",
+          "18.57 min"
+        ]
+      ],
+      "stack": "Python • pandas • Parquet • Power BI • DAX • Power Query",
+      "note": "",
+      "image": "https://raw.githubusercontent.com/tosinmulero/cyclistic-rider-behaviour-analysis/main/images/Cyclist_Powerbi_Dashboard.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis"
+        },
+        {
+          "label": "Summary",
+          "url": "https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        }
+      ],
+      "position": 10
+    },
+    {
+      "slug": "bellabeat-wellness-analysis",
+      "title": "Bellabeat Wellness Analysis",
+      "domain": "Wellness Analytics • Behaviour • Power BI",
+      "badge": "Behavioural Analytics",
+      "description": "Fitbit activity and sleep analysis exploring behaviour, sedentary time, calories, sleep and user-level patterns.",
+      "metrics": [
+        [
+          "avg. daily steps",
+          "7,801"
+        ],
+        [
+          "avg. sleep",
+          "419 min"
+        ],
+        [
+          "sleep efficiency",
+          "91.65%"
+        ]
+      ],
+      "stack": "Python • pandas • Power BI • Behavioural Analytics",
+      "note": "",
+      "image": "https://raw.githubusercontent.com/tosinmulero/bellabeat-wellness-analysis/main/images/bellabeat_dashboard.png",
+      "links": [
+        {
+          "label": "Repository ↗",
+          "url": "https://github.com/tosinmulero/bellabeat-wellness-analysis"
+        },
+        {
+          "label": "Summary",
+          "url": "https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        }
+      ],
+      "position": 11
+    }
+  ]
+}

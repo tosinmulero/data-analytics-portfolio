@@ -3354,3 +3354,114 @@ button:focus-visible {
 @media (max-width: 920px) { .nhs-primarycare-feature-grid { grid-template-columns: 1fr; } }
 @media (max-width: 540px) { .nhs-primarycare-feature-grid { padding: 10px 13px 18px; gap: 18px; } .nhs-primarycare-gallery { gap: 5px; } }
 /* NHS PRIMARY CARE FEATURE END */
+
+/* PORTFOLIO SYNC DESIGN SYSTEM â€” BEGIN */
+/* One colourful, consistent geometry across 11 verified project cards. */
+.portfolio-synced-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: clamp(18px, 2.5vw, 28px);
+    margin-top: 28px;
+}
+.portfolio-synced-grid > .project-card {
+    --project-accent: #22d3ee;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    border-color: color-mix(in srgb, var(--project-accent) 35%, #334155);
+    background: linear-gradient(154deg, rgba(22,32,57,.99), rgba(7,13,28,.99));
+    box-shadow: 0 22px 64px rgba(0,0,0,.24), 0 0 0 1px rgba(255,255,255,.015) inset;
+}
+.portfolio-synced-grid > .project-card:nth-child(5n+2) { --project-accent: #38bdf8; }
+.portfolio-synced-grid > .project-card:nth-child(5n+3) { --project-accent: #34d399; }
+.portfolio-synced-grid > .project-card:nth-child(5n+4) { --project-accent: #c084fc; }
+.portfolio-synced-grid > .project-card:nth-child(5n)   { --project-accent: #fbbf24; }
+.portfolio-synced-grid > .project-card::after { background: linear-gradient(90deg, var(--project-accent), #818cf8, #f472b6); opacity: 1; }
+.portfolio-synced-grid .project-topline { position: relative; inset: auto; min-height: 66px; padding: 16px 18px; align-items: center; border-bottom: 1px solid rgba(148,163,184,.15); }
+.portfolio-synced-grid .project-badge { max-width: calc(100% - 48px); overflow-wrap: anywhere; border-color: color-mix(in srgb, var(--project-accent) 45%, transparent); }
+.portfolio-synced-grid .project-media,
+.portfolio-synced-grid .railnexus-screenshot-media,
+.portfolio-synced-grid .railflow-screenshot-media,
+.portfolio-synced-grid .railsearch-screenshot-media,
+.portfolio-synced-grid .compact .project-media {
+    height: 270px; min-height: 0; width: 100%; flex-shrink: 0; overflow: hidden;
+    padding: 0; margin: 0; background: #090f1e; border-bottom: 1px solid rgba(148,163,184,.13);
+}
+.portfolio-synced-grid .project-media img,
+.portfolio-synced-grid .compact .project-media img,
+.portfolio-synced-grid .railnexus-screenshot-media img,
+.portfolio-synced-grid .railflow-screenshot-media img,
+.portfolio-synced-grid .railsearch-screenshot-media img {
+    width: 100%; height: 100%; min-height: 0; object-fit: contain; object-position: center;
+    background: #090f1e;
+}
+.portfolio-synced-grid .project-body,
+.portfolio-synced-grid .compact .project-body,
+.portfolio-synced-grid .project-flagship .project-body {
+    width: 100%; padding: clamp(18px, 2.3vw, 28px); display: flex; flex: 1 1 auto; flex-direction: column;
+}
+.portfolio-synced-grid .project-body h3,
+.portfolio-synced-grid .project-flagship .project-body h3 { font-size: clamp(1.36rem, 2vw, 1.83rem); line-height: 1.21; }
+.portfolio-synced-grid .project-body > div:first-child { max-width: none; }
+.portfolio-synced-grid .project-domain { color: var(--project-accent); }
+.portfolio-synced-grid .project-kpis,
+.portfolio-synced-grid .project-flagship .project-kpis,
+.portfolio-synced-grid .project-kpis.small { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.portfolio-synced-grid .project-kpis span { min-width: 0; min-height: 68px; overflow-wrap: anywhere; padding: 12px; background: color-mix(in srgb, var(--project-accent) 8%, #0b1426); }
+.portfolio-synced-grid .project-kpis strong { display: inline; color: var(--project-accent); font-size: 1.04rem; }
+.portfolio-synced-grid .project-stack { overflow-wrap: anywhere; }
+.portfolio-synced-grid .project-actions { display: flex; flex-wrap: wrap; gap: 9px; align-items: stretch; margin-top: auto; padding-top: 12px; }
+.portfolio-synced-grid .project-btn { min-width: 0; min-height: 46px; flex: 1 1 138px; overflow-wrap: anywhere; }
+.portfolio-synced-grid .project-btn.primary { background: linear-gradient(120deg,#2563eb,#7c3aed,#db2777); }
+.portfolio-synced-grid .responsible-note { margin-top: 17px; }
+.portfolio-synced-grid > .project-card:first-child { grid-column: 1 / -1; }
+.portfolio-synced-grid > .nhs-latest { --project-accent: #2dd4bf; background: radial-gradient(circle at 95% 7%, rgba(14,165,233,.16),transparent 35%), radial-gradient(circle at 4% 99%,rgba(168,85,247,.16),transparent 38%),linear-gradient(145deg,#11253b,#0b1023); }
+.portfolio-synced-grid .nhs-latest .project-badge { color:#fff; background:linear-gradient(110deg,#0891b2,#2563eb,#7c3aed,#e85d75); }
+.portfolio-synced-grid .nhs-latest .nhs-feature-media { height: clamp(290px,42vw,520px); }
+.portfolio-synced-grid .nhs-feature-media a { display:block; width:100%; height:100%; }
+.portfolio-synced-grid .nhs-latest .project-body { padding: clamp(20px,3vw,36px); }
+.portfolio-synced-grid .nhs-latest .project-body h3 { font-size: clamp(1.8rem, 3vw, 2.65rem); }
+.portfolio-synced-grid .nhs-latest .project-kpis { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.nhs-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:26px; }
+.nhs-gallery-item { overflow:hidden; border:1px solid rgba(94,234,212,.25); border-radius:14px; background:rgba(4,13,27,.6); text-decoration:none; transition:transform .2s ease, border-color .2s ease; }
+.nhs-gallery-item:hover { transform:translateY(-3px); border-color:#67e8f9; }
+.nhs-gallery-item img { width:100%; height:135px; object-fit:contain; background:#091325; }
+.nhs-gallery-item span { display:block; padding:10px 12px; color:#e2e8f0; font-size:.76rem; font-weight:750; }
+@media (max-width:900px) {
+    .portfolio-synced-grid { grid-template-columns:1fr; }
+    .portfolio-synced-grid > .nhs-latest { grid-column:auto; }
+    .portfolio-synced-grid .nhs-latest .project-kpis { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:600px) {
+    .portfolio-synced-grid { gap:18px; }
+    .portfolio-synced-grid .project-media,
+    .portfolio-synced-grid .railnexus-screenshot-media,
+    .portfolio-synced-grid .railflow-screenshot-media,
+    .portfolio-synced-grid .railsearch-screenshot-media,
+    .portfolio-synced-grid .compact .project-media { height:210px; }
+    .portfolio-synced-grid .nhs-latest .nhs-feature-media { height:240px; }
+    .portfolio-synced-grid .project-body,
+    .portfolio-synced-grid .compact .project-body,
+    .portfolio-synced-grid .project-flagship .project-body { padding:18px 15px 22px; }
+    .portfolio-synced-grid .project-topline { padding:12px 14px; }
+    .portfolio-synced-grid .project-badge { max-width:calc(100% - 32px); font-size:.66rem; }
+    .portfolio-synced-grid .project-kpis,
+    .portfolio-synced-grid .project-flagship .project-kpis { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .portfolio-synced-grid .project-kpis span { padding:10px; font-size:.72rem; }
+    .portfolio-synced-grid .project-actions { flex-direction:column; }
+    .portfolio-synced-grid .project-btn { width:100%; flex-basis:auto; }
+    .nhs-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .nhs-gallery-item img { height:110px; }
+}
+@media (max-width:380px) {
+    .portfolio-synced-grid .project-kpis,
+    .portfolio-synced-grid .project-flagship .project-kpis,
+    .portfolio-synced-grid .nhs-latest .project-kpis { grid-template-columns:1fr; }
+    .nhs-gallery { grid-template-columns:1fr; }
+}
+@media (prefers-reduced-motion:reduce) { .nhs-gallery-item { transition:none; } }
+/* PORTFOLIO SYNC DESIGN SYSTEM â€” END */
