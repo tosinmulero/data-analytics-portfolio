@@ -3325,3 +3325,32 @@ button:focus-visible {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* NHS PRIMARY CARE FEATURE START */
+.nhs-primarycare-feature-wrap { margin: 36px 0; }
+.nhs-primarycare-feature {
+    overflow: hidden;
+    border-color: rgba(34, 211, 238, .34);
+    background: linear-gradient(135deg, rgba(8, 22, 49, .96), rgba(23, 18, 55, .96));
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .22), 0 0 0 1px rgba(34, 211, 238, .07) inset;
+}
+.nhs-primarycare-feature-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr);
+    gap: 26px;
+    padding: 12px 24px 28px;
+    align-items: start;
+}
+.nhs-primarycare-feature-hero > a { display: block; overflow: hidden; border-radius: 16px; border: 1px solid rgba(139, 203, 255, .28); }
+.nhs-primarycare-feature-hero > a > img { width: 100%; height: auto; aspect-ratio: 2833 / 1490; object-fit: cover; }
+.nhs-primarycare-gallery { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; margin-top: 12px; }
+.nhs-primarycare-gallery a { overflow: hidden; border-radius: 9px; border: 1px solid rgba(148, 163, 184, .22); transition: transform .2s ease,border-color .2s ease; }
+.nhs-primarycare-gallery a:hover,.nhs-primarycare-gallery a:focus-visible { transform: translateY(-3px); border-color: var(--cyan); }
+.nhs-primarycare-gallery img { width: 100%; aspect-ratio: 2833 / 1490; object-fit: cover; }
+.nhs-primarycare-feature-body { min-width: 0; padding: 0; }
+.nhs-primarycare-feature-body .project-kpis { display: flex; flex-wrap: wrap; gap: 10px; }
+.nhs-primarycare-feature-body .project-kpis span { flex: 1 1 140px; }
+@media (max-width: 920px) { .nhs-primarycare-feature-grid { grid-template-columns: 1fr; } }
+@media (max-width: 540px) { .nhs-primarycare-feature-grid { padding: 10px 13px 18px; gap: 18px; } .nhs-primarycare-gallery { gap: 5px; } }
+/* NHS PRIMARY CARE FEATURE END */
