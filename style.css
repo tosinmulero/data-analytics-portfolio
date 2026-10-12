@@ -29,3 +29,88 @@
 @media(max-width:800px){.shell{width:min(100% - 36px,var(--width))}.nav-shell{height:76px}.nav-toggle{display:block;margin-left:auto}.site-nav{display:none;position:absolute;top:75px;left:0;right:0;background:#fff;box-shadow:0 18px 25px #12373d1a;border-bottom:1px solid var(--line);padding:20px 22px 25px;align-items:stretch;flex-direction:column}.site-nav.open{display:flex}.site-nav ul{flex-direction:column;align-items:stretch;gap:0}.site-nav ul li a{display:block;padding:11px 6px;font-size:15px}.site-nav ul a[aria-current=page]::after{display:none}.nav-contact{text-align:center}.hero{grid-template-columns:1fr;min-height:0;padding-block:60px 85px}.hero h1{font-size:clamp(3.8rem,8vw,5.6rem)}.hero-visual{max-width:650px;margin:0 auto;width:100%}.section{padding-block:75px}.section-heading{align-items:start;flex-direction:column;gap:15px}.section-heading>p{max-width:650px}.service-grid,.featured-projects{grid-template-columns:repeat(2,minmax(0,1fr))}.editorial-row{grid-template-columns:1fr;gap:5px}.editorial-row>div:last-child{padding-top:5px}.cta-panel{padding:33px;align-items:start;flex-direction:column}.credibility-content{justify-content:flex-start;gap:20px 28px}.page-hero{padding-block:65px 55px}.about-layout{grid-template-columns:1fr;gap:35px}.portrait-panel{max-width:510px}.contact-layout{grid-template-columns:1fr}.contact-secondary{flex-direction:row}.contact-secondary>.contact-card{flex:1}.footer-grid{gap:30px}}
 @media(max-width:560px){.shell{width:calc(100% - 32px)}body{font-size:15px}.logo-copy strong{font-size:16px}.logo-copy small{font-size:7px}.logo-mark{width:40px;height:40px}.hero h1{font-size:clamp(3.1rem,13.6vw,4.8rem)}.hero{padding-top:48px;gap:45px}.hero-visual{padding:18px}.visual-bottom{gap:7px 15px}.trust-line{margin-top:25px}.credibility-content strong{font-size:12px}.section,.case-band{padding-block:65px}.service-grid,.featured-projects,.project-grid,.principles-grid{grid-template-columns:1fr}.service-card{min-height:250px;padding:24px}.project-image{height:210px!important}.section-heading h2{font-size:clamp(2rem,8vw,2.8rem)}.page-hero h1{font-size:clamp(2.9rem,11vw,4.4rem)}.service-detail{grid-template-columns:1fr;gap:8px;padding:30px 0}.service-num{font-size:32px}.slim-callout{padding:27px;flex-direction:column;align-items:flex-start}.portfolio-toolbar{align-items:stretch}.search-label,.search-label input{width:100%}.portrait-wrap{height:300px}.stat-row{gap:15px;flex-wrap:wrap}.contact-secondary{flex-direction:column}.contact-card{padding:26px}.footer-grid{grid-template-columns:1fr 1fr;gap:30px;padding:45px 0 33px}.footer-grid>div:first-child{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:8px}.dialog-body{padding:24px}.dialog-hero{height:195px}.dialog-stats{grid-template-columns:1fr 1fr;gap:7px}.cta-panel{margin-bottom:65px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* MULERO-ANALYTICS-REFINEMENT-OCT2026 */
+
+/* More balanced homepage presentation */
+@media (min-width: 801px) {
+  .hero {
+    min-height: 620px;
+    padding-block: 64px 76px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.2rem, 4vw, 4.25rem);
+    line-height: 1.13;
+  }
+}
+
+/* Bring the portfolio projects closer to the top */
+.projects-page .page-hero {
+  padding-block: 56px 38px;
+}
+
+.projects-page .page-hero h1 {
+  font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+  line-height: 1.14;
+  margin-block: 15px 20px;
+}
+
+.projects-page .disclosure {
+  margin-top: 20px;
+}
+
+/* Make dashboard screenshots easier to inspect */
+.project-image {
+  height: 225px;
+  background: #eef4f1;
+}
+
+.project-image img {
+  object-fit: contain;
+  object-position: center;
+  background: #eef4f1;
+}
+
+.project-card:hover .project-image img {
+  transform: none;
+}
+
+/* Disclosure remains in the portfolio introduction */
+.image-label {
+  display: none;
+}
+
+/* Shorter preview descriptions; full details remain */
+.project-content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  flex: 0 1 auto;
+}
+
+.project-metrics {
+  margin-top: auto;
+}
+
+@media (max-width: 800px) {
+  .hero h1 {
+    font-size: clamp(3rem, 7.2vw, 4.6rem);
+  }
+
+  .projects-page .page-hero {
+    padding-block: 48px 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero h1 {
+    font-size: clamp(2.7rem, 11vw, 3.7rem);
+  }
+
+  .projects-page .page-hero h1 {
+    font-size: clamp(2.4rem, 9vw, 3.1rem);
+  }
+}
