@@ -1,0 +1,103 @@
+name: Mulero Analytics Portfolio Quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate published pages, project directory and local assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run static portfolio quality checks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          from urllib.parse import urlsplit, unquote
+          import json
+          import xml.etree.ElementTree as ET
+
+          root = Path(".")
+          html_files = ["index.html", "services.html", "projects.html", "about.html", "contact.html"]
+          required = [
+              "README.md", "style.css", "script.js", "projects-data.js",
+              "portfolio-projects.json", "robots.txt", "sitemap.xml", "favicon.svg",
+          ] + html_files
+          missing = [name for name in required if not (root / name).is_file()]
+          assert not missing, f"Missing website files: {missing}"
+
+          class PageParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.local = []
+                  self.scripts = []
+                  self.has_title = False
+                  self.has_description = False
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == "title":
+                      self.has_title = True
+                  if tag == "meta" and attrs.get("name") == "description" and attrs.get("content"):
+                      self.has_description = True
+                  if tag in ("script", "link", "img", "a"):
+                      url = attrs.get("src") or attrs.get("href")
+                      if url:
+                          self.local.append((tag, url))
+
+          for html in html_files:
+              source = (root / html).read_text(encoding="utf-8-sig")
+              parser = PageParser()
+              parser.feed(source)
+              assert parser.has_title and parser.has_description, f"Missing SEO title or description: {html}"
+              for tag, url in parser.local:
+                  if url.startswith(("https://", "http://", "mailto:", "tel:", "data:", "#", "javascript:")):
+                      continue
+                  # Only validate local file links; fragment and query are not part of the disk path.
+                  url_path = unquote(urlsplit(url).path)
+                  if not url_path:
+                      continue
+                  if url_path.startswith("/"):
+                      url_path = url_path.lstrip("/")
+                  target = (root / url_path)
+                  if not target.is_file():
+                      raise AssertionError(f"{html}: missing local {tag} target {url!r}")
+          print("Validated all five website pages, SEO metadata and local references.")
+
+          data = json.loads((root / "portfolio-projects.json").read_text(encoding="utf-8-sig"))
+          projects = data["projects"]
+          assert len(projects) == 11, f"Expected 11 portfolio projects, found {len(projects)}"
+          slugs = [p["slug"] for p in projects]
+          assert len(set(slugs)) == len(slugs), "Duplicate project slugs"
+          for project in projects:
+              assert project["title"] and project["description"], project["slug"]
+              assert project["image"], f"Missing screenshot source: {project['slug']}"
+              assert project["links"] and any(
+                  link.get("url", "").startswith("https://github.com/tosinmulero/")
+                  for link in project["links"]
+              ), f"Missing repository proof: {project['slug']}"
+          print("Validated 11 unique, documented projects and repository evidence links.")
+
+          tree = ET.parse(root / "sitemap.xml")
+          locs = [e.text for e in tree.getroot().iter() if e.tag.endswith("loc")]
+          origin = "https://tosinmulero.github.io/data-analytics-portfolio/"
+          expected = [origin] + [origin + name for name in html_files[1:]]
+          assert set(locs) == set(expected), f"Sitemap URLs do not match the five public pages: {locs}"
+          print("Validated sitemap with five canonical website URLs.")
+          PY
