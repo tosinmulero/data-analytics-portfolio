@@ -114,3 +114,31 @@
     font-size: clamp(2.4rem, 9vw, 3.1rem);
   }
 }
+
+
+/* MULERO-FINAL-QUALITY-AUDIT-2026 */
+/* Refine the founder layout without changing the portfolio or claims. */
+.about-page .page-hero{padding-block:62px 40px}
+.about-layout{grid-template-columns:minmax(0,.76fr) minmax(0,1.24fr);gap:clamp(28px,4.2vw,62px);padding-block:55px 85px}
+.about-prose h2{font-size:clamp(2rem,2.8vw,2.75rem);line-height:1.23;margin:12px 0 18px}
+.about-prose>p{font-size:15px;line-height:1.78}
+.portrait-wrap{height:345px}
+.portrait-caption{padding:24px 26px}
+.portrait-caption h2{font-size:22px}
+/* Keep project screenshots uncropped and controls legible. */
+.project-image img{object-fit:contain}
+.site-nav ul a[aria-current=page]{text-underline-offset:7px}
+.project-content,.about-prose,.contact-card{min-width:0;overflow-wrap:break-word}
+@media(max-width:800px){
+ .about-page .page-hero{padding-block:50px 34px}
+ .about-layout{grid-template-columns:1fr;gap:34px;padding-block:45px 70px}
+ .portrait-panel{max-width:490px;width:100%;margin-inline:auto}
+ .about-prose h2{font-size:clamp(2rem,5vw,2.55rem)}
+}
+@media(max-width:560px){
+ .portrait-wrap{height:310px}
+ .portrait-caption{padding:22px}
+ .about-prose h2{font-size:clamp(1.9rem,7.8vw,2.35rem)}
+ .about-page .page-hero{padding-block:43px 29px}
+ .about-layout{padding-block:32px 60px}
+}
