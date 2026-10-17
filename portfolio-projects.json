@@ -3,6 +3,46 @@
   "ordering": "newest-completed-project-first",
   "projects": [
     {
+      "slug": "fintech-product-science-lab",
+      "title": "Fintech Product Science Lab — Experimentation, Causal Inference & Retention ML",
+      "domain": "Fintech Data Science • Product Experimentation • Causal Inference • Machine Learning",
+      "badge": "New · Product Science · 2026",
+      "description": "Three independent synthetic fintech case studies: randomised first-payment activation experiments, observational engagement impact and temporally validated churn prediction, with decision lab and proposed data science leadership plan.",
+      "metrics": [
+        [
+          "Synthetic A/B activation change",
+          "+3.79 pp"
+        ],
+        [
+          "Synthetic DiD estimate",
+          "+5.37 pp"
+        ],
+        [
+          "Untouched churn ROC AUC",
+          "0.799"
+        ],
+        [
+          "Automated tests passed",
+          "20"
+        ]
+      ],
+      "stack": "Python • pandas • SciPy • statsmodels • scikit-learn • SQL • pytest • Experimentation • Causal Inference • Model Validation",
+      "note": "All datasets and results are synthetic. Independent portfolio demonstration only. Not affiliated with Monzo or any bank; no actual business uplift, causal proof or employment impact.",
+      "image": "https://tosinmulero.github.io/data-analytics-portfolio/images/fintech-product-science-lab.svg",
+      "case_study_url": "product-science-lab/",
+      "links": [
+        {
+          "label": "Interactive case studies",
+          "url": "https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/"
+        },
+        {
+          "label": "GitHub source site",
+          "url": "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/product-science-lab"
+        }
+      ],
+      "position": 1
+    },
+    {
       "slug": "nhs-primary-care-intelligence-platform",
       "title": "NHS Primary Care Data Management & Clinical Intelligence Platform",
       "domain": "Primary Care Data Administration • Healthcare Analytics • Data Engineering • Power BI",
@@ -47,7 +87,7 @@
           "url": "https://github.com/tosinmulero/nhs-primary-care-intelligence-platform/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 1
+      "position": 2
     },
     {
       "slug": "railnexus-b2b-product-growth-intelligence",
@@ -98,7 +138,7 @@
           "url": "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 2
+      "position": 3
     },
     {
       "slug": "railpartner-360",
@@ -149,7 +189,7 @@
           "url": "https://github.com/tosinmulero/railpartner-360/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 3
+      "position": 4
     },
     {
       "slug": "railflow-ml-data-platform",
@@ -200,7 +240,7 @@
           "url": "https://github.com/tosinmulero/railflow-ml-data-platform/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 4
+      "position": 5
     },
     {
       "slug": "railsearch-customer-journey-intelligence",
@@ -251,7 +291,7 @@
           "url": "https://github.com/tosinmulero/railsearch-customer-journey-intelligence/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 5
+      "position": 6
     },
     {
       "slug": "credit-risk-explainable-ai",
@@ -302,7 +342,7 @@
           "url": "https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 6
+      "position": 7
     },
     {
       "slug": "customer-360-revenue-growth-analytics",
@@ -349,7 +389,7 @@
           "url": "https://github.com/tosinmulero/customer-360-revenue-growth-analytics/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 7
+      "position": 8
     },
     {
       "slug": "nhs-hospital-performance-analysis",
@@ -388,7 +428,7 @@
           "url": "https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 8
+      "position": 9
     },
     {
       "slug": "olist-ecommerce-analysis",
@@ -427,7 +467,7 @@
           "url": "https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 9
+      "position": 10
     },
     {
       "slug": "cyclistic-rider-behaviour-analysis",
@@ -466,7 +506,7 @@
           "url": "https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 10
+      "position": 11
     },
     {
       "slug": "bellabeat-wellness-analysis",
@@ -505,7 +545,7 @@
           "url": "https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
-      "position": 11
+      "position": 12
     }
   ]
 }
