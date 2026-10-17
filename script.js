@@ -31,7 +31,7 @@ function projectImage(project) {
 function projectCard(project) {
  const metrics=(project.metrics||[]).slice(0,2).map(pair=>`<div><strong>${clean(pair[1])}</strong><small>${clean(pair[0])}</small></div>`).join('');
  const first=(project.links||[])[0];
- const caseHref=project.slug==='fintech-product-science-lab'?'product-science-lab/':`case-studies/${encodeURIComponent(project.slug)}.html`;
+ const caseHref=project.slug==='fintech-product-science-lab'?'product-science-lab/index.html':`case-studies/${encodeURIComponent(project.slug)}.html`;
  return `<article class="project-card">${projectImage(project)}<div class="project-content"><span class="project-tag">${clean(project.badge||project.domain)}</span><h3>${clean(project.title)}</h3><p>${clean(project.description)}</p><div class="project-metrics">${metrics}</div><div class="project-actions"><a class="open-case" href="${caseHref}" aria-label="Read full case study for ${clean(project.title)}">Read case study →</a>${first?`<a href="${clean(safeUrl(first.url))}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>`:''}</div></div></article>`;
 }
 function normaliseProject(p) {
