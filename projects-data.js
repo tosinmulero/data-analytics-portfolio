@@ -36,7 +36,8 @@ window.MULERO_PROJECT_FALLBACK = [
         "Interactive case studies",
         "https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/"
       ]
-    ]  },
+    ]
+  },
   {
     "slug": "nhs-primary-care-intelligence-platform",
     "title": "NHS Primary Care Data Management & Clinical Intelligence Platform",
