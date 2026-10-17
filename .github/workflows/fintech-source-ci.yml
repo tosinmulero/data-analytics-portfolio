@@ -1,0 +1,39 @@
+name: Fintech Product Science Source Validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'fintech-product-science-lab/source/**'
+      - '.github/workflows/fintech-source-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install statistical dependencies
+        run: python -m pip install -r fintech-product-science-lab/source/requirements.txt
+      - name: Public core regression tests
+        run: python -m unittest discover -s fintech-product-science-lab/source -p 'test_*.py' -v
+      - name: Run end-to-end synthetic pipeline
+        run: python fintech-product-science-lab/source/fintech_core.py --output-dir public-source-results
+      - name: Check outputs
+        run: |
+          test -s public-source-results/results.json
+          test -s public-source-results/experiment.csv
+          test -s public-source-results/weekly_panel.csv
+          test -s public-source-results/churn_snapshots.csv
+          test -s public-source-results/experiment_activation.png
+          test -s public-source-results/churn_roc.png
+          for f in 01_kpis 02_funnel 03_customer_segments 04_experiment_guardrails; do test -s "public-source-results/$f.csv"; done
