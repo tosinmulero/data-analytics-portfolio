@@ -73,3 +73,8 @@ No frontend framework or build step is needed for a basic local preview. For pro
 For analytics enquiries, collaboration or recruitment: **[tosinmulero@gmail.com](mailto:tosinmulero@gmail.com)**. Recruiters can request a current CV by email.
 
 **© Mulero Analytics — independent professional portfolio.** No licence is asserted by this README; review the repository's licence status before reusing code or assets.
+
+
+## Fintech Product Science Lab (2026)
+
+[Open the published Product Science Lab](https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/) to explore independent synthetic customer onboarding experimentation, observational engagement modelling, a future-holdout churn classifier, responsible decision scenarios and proposed Data Science Manager leadership practices. The simulation does not use Monzo or real banking customer data. All metrics are demonstrative. Original local reproducible source package is maintained separately until its complete online publication is verified.
