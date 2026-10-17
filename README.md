@@ -18,9 +18,13 @@ This repository contains the **website**. Each technical project has a **separat
 | --- | --- |
 | [Home](https://tosinmulero.github.io/data-analytics-portfolio/) | Introduction and featured work |
 | [Services](https://tosinmulero.github.io/data-analytics-portfolio/services.html) | Analytics and reporting capabilities |
-| [Projects](https://tosinmulero.github.io/data-analytics-portfolio/projects.html) | Portfolio projects, filters and case studies |
+| [Projects](https://tosinmulero.github.io/data-analytics-portfolio/projects.html) | Portfolio projects and filters with 11 dedicated case-study pages |
 | [About](https://tosinmulero.github.io/data-analytics-portfolio/about.html) | Founder background and approach |
 | [Contact](https://tosinmulero.github.io/data-analytics-portfolio/contact.html) | Project enquiries and recruiter contact |
+
+## Dedicated project pages
+
+Each project has a standalone case study at `case-studies/<slug>.html`, with problem framing, data provenance, analytical methods, evidence, decision relevance and limitations. Featured cards and the full projects listing link directly to these pages. Legacy `projects.html?project=<slug>` links redirect to the dedicated pages.
 
 ## Portfolio projects
 
