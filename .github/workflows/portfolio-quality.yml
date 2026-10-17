@@ -36,6 +36,7 @@ jobs:
 
           root = Path(".")
           html_files = ["index.html", "services.html", "projects.html", "about.html", "contact.html"]
+          html_files += sorted(str(path) for path in (root / "case-studies").glob("*.html"))
           required = [
               "README.md", "style.css", "script.js", "projects-data.js",
               "portfolio-projects.json", "robots.txt", "sitemap.xml", "favicon.svg",
@@ -74,18 +75,21 @@ jobs:
                   if not url_path:
                       continue
                   if url_path.startswith("/"):
-                      url_path = url_path.lstrip("/")
-                  target = (root / url_path)
+                      target = root / url_path.lstrip("/")
+                  else:
+                      target = (root / html).parent / url_path
                   if not target.is_file():
                       raise AssertionError(f"{html}: missing local {tag} target {url!r}")
-          print("Validated all five website pages, SEO metadata and local references.")
+          print(f"Validated {len(html_files)} website pages, SEO metadata and local references.")
 
           data = json.loads((root / "portfolio-projects.json").read_text(encoding="utf-8-sig"))
           projects = data["projects"]
           assert len(projects) == 11, f"Expected 11 portfolio projects, found {len(projects)}"
           slugs = [p["slug"] for p in projects]
           assert len(set(slugs)) == len(slugs), "Duplicate project slugs"
+          assert len(html_files) == 5 + len(projects), "Missing or unexpected case-study pages"
           for project in projects:
+              assert (root / "case-studies" / (project["slug"] + ".html")).is_file(), project["slug"]
               assert project["title"] and project["description"], project["slug"]
               assert project["image"], f"Missing screenshot source: {project['slug']}"
               assert project["links"] and any(
@@ -98,6 +102,6 @@ jobs:
           locs = [e.text for e in tree.getroot().iter() if e.tag.endswith("loc")]
           origin = "https://tosinmulero.github.io/data-analytics-portfolio/"
           expected = [origin] + [origin + name for name in html_files[1:]]
-          assert set(locs) == set(expected), f"Sitemap URLs do not match the five public pages: {locs}"
-          print("Validated sitemap with five canonical website URLs.")
+          assert set(locs) == set(expected), f"Sitemap URLs do not match published pages: {locs}"
+          print(f"Validated sitemap with {len(expected)} canonical website URLs.")
           PY
