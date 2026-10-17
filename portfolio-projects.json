@@ -32,11 +32,11 @@
       "case_study_url": "product-science-lab/index.html",
       "links": [
         {
-          "label": "GitHub website source",
-          "url": "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/product-science-lab"
+          "label": "Reproducible Python & SQL",
+          "url": "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/fintech-product-science-lab/source"
         },
         {
-          "label": "Interactive case studies",
+          "label": "Explore full case studies",
           "url": "https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/"
         }
       ],
