@@ -32,12 +32,12 @@
       "case_study_url": "product-science-lab/index.html",
       "links": [
         {
-          "label": "Interactive case studies",
-          "url": "https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/"
+          "label": "GitHub website source",
+          "url": "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/product-science-lab"
         },
         {
-          "label": "GitHub source site",
-          "url": "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/product-science-lab"
+          "label": "Interactive case studies",
+          "url": "https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/"
         }
       ],
       "position": 1
