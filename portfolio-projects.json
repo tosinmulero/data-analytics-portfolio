@@ -29,7 +29,7 @@
       "stack": "Python • pandas • SciPy • statsmodels • scikit-learn • SQL • pytest • Experimentation • Causal Inference • Model Validation",
       "note": "All datasets and results are synthetic. Independent portfolio demonstration only. Not affiliated with Monzo or any bank; no actual business uplift, causal proof or employment impact.",
       "image": "https://tosinmulero.github.io/data-analytics-portfolio/images/fintech-product-science-lab.svg",
-      "case_study_url": "product-science-lab/",
+      "case_study_url": "product-science-lab/index.html",
       "links": [
         {
           "label": "Interactive case studies",
