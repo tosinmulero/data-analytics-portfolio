@@ -37,9 +37,11 @@ jobs:
           root = Path(".")
           html_files = ["index.html", "services.html", "projects.html", "about.html", "contact.html"]
           html_files += sorted(str(path) for path in (root / "case-studies").glob("*.html"))
+          html_files += ["product-science-lab/index.html"]
           required = [
               "README.md", "style.css", "script.js", "projects-data.js",
               "portfolio-projects.json", "robots.txt", "sitemap.xml", "favicon.svg",
+              "images/fintech-product-science-lab.svg",
           ] + html_files
           missing = [name for name in required if not (root / name).is_file()]
           assert not missing, f"Missing website files: {missing}"
@@ -84,10 +86,10 @@ jobs:
 
           data = json.loads((root / "portfolio-projects.json").read_text(encoding="utf-8-sig"))
           projects = data["projects"]
-          assert len(projects) == 11, f"Expected 11 portfolio projects, found {len(projects)}"
+          assert len(projects) == 12, f"Expected 12 portfolio projects, found {len(projects)}"
           slugs = [p["slug"] for p in projects]
           assert len(set(slugs)) == len(slugs), "Duplicate project slugs"
-          assert len(html_files) == 5 + len(projects), "Missing or unexpected case-study pages"
+          assert len(html_files) == 5 + len(projects) + 1, "Missing or unexpected case-study pages"
           for project in projects:
               assert (root / "case-studies" / (project["slug"] + ".html")).is_file(), project["slug"]
               assert project["title"] and project["description"], project["slug"]
@@ -96,12 +98,12 @@ jobs:
                   link.get("url", "").startswith("https://github.com/tosinmulero/")
                   for link in project["links"]
               ), f"Missing repository proof: {project['slug']}"
-          print("Validated 11 unique, documented projects and repository evidence links.")
+          print("Validated 12 unique, documented projects and repository evidence links.")
 
           tree = ET.parse(root / "sitemap.xml")
           locs = [e.text for e in tree.getroot().iter() if e.tag.endswith("loc")]
           origin = "https://tosinmulero.github.io/data-analytics-portfolio/"
-          expected = [origin] + [origin + name for name in html_files[1:]]
+          expected = [origin] + [origin + (name.replace("product-science-lab/index.html", "product-science-lab/")) for name in html_files[1:]]
           assert set(locs) == set(expected), f"Sitemap URLs do not match published pages: {locs}"
           print(f"Validated sitemap with {len(expected)} canonical website URLs.")
           PY
