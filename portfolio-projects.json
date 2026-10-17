@@ -41,6 +41,10 @@
         {
           "label": "Six dashboards",
           "url": "https://github.com/tosinmulero/nhs-primary-care-intelligence-platform#all-six-pages"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/nhs-primary-care-intelligence-platform/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 1
@@ -88,6 +92,10 @@
         {
           "label": "Visual Gallery",
           "url": "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence/tree/main/docs/screenshots"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 2
@@ -135,6 +143,10 @@
         {
           "label": "Visual Gallery",
           "url": "https://github.com/tosinmulero/railpartner-360/tree/main/docs/screenshots"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/railpartner-360/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 3
@@ -182,6 +194,10 @@
         {
           "label": "Visual Gallery",
           "url": "https://github.com/tosinmulero/railflow-ml-data-platform/tree/main/docs/screenshots"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/railflow-ml-data-platform/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 4
@@ -229,6 +245,10 @@
         {
           "label": "Visual Gallery",
           "url": "https://github.com/tosinmulero/railsearch-customer-journey-intelligence/tree/main/reports/figures"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/railsearch-customer-journey-intelligence/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 5
@@ -276,6 +296,10 @@
         {
           "label": "Visual Gallery",
           "url": "https://github.com/tosinmulero/credit-risk-explainable-ai/tree/main/reports/figures"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 6
@@ -319,6 +343,10 @@
         {
           "label": "Visual Gallery",
           "url": "https://github.com/tosinmulero/customer-360-revenue-growth-analytics/tree/main/images/powerbi"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/customer-360-revenue-growth-analytics/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 7
@@ -354,6 +382,10 @@
         {
           "label": "Summary",
           "url": "https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 8
@@ -389,6 +421,10 @@
         {
           "label": "Summary",
           "url": "https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 9
@@ -424,6 +460,10 @@
         {
           "label": "Summary",
           "url": "https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 10
@@ -459,6 +499,10 @@
         {
           "label": "Summary",
           "url": "https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+        },
+        {
+          "label": "Recruiter evidence guide",
+          "url": "https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/RECRUITER_GUIDE.md"
         }
       ],
       "position": 11

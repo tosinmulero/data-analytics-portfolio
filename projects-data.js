@@ -39,6 +39,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Six dashboards",
         "https://github.com/tosinmulero/nhs-primary-care-intelligence-platform#all-six-pages"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/nhs-primary-care-intelligence-platform/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -85,6 +89,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Visual gallery",
         "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence/tree/main/docs/screenshots"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/railnexus-b2b-product-growth-intelligence/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -131,6 +139,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Visual gallery",
         "https://github.com/tosinmulero/railpartner-360/tree/main/docs/screenshots"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/railpartner-360/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -177,6 +189,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Visual gallery",
         "https://github.com/tosinmulero/railflow-ml-data-platform/tree/main/docs/screenshots"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/railflow-ml-data-platform/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -223,6 +239,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Visual gallery",
         "https://github.com/tosinmulero/railsearch-customer-journey-intelligence/tree/main/reports/figures"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/railsearch-customer-journey-intelligence/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -269,6 +289,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Visual gallery",
         "https://github.com/tosinmulero/credit-risk-explainable-ai/tree/main/reports/figures"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/credit-risk-explainable-ai/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -311,6 +335,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Visual gallery",
         "https://github.com/tosinmulero/customer-360-revenue-growth-analytics/tree/main/images/powerbi"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/customer-360-revenue-growth-analytics/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -345,6 +373,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Recruiter summary",
         "https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/nhs-hospital-performance-analysis/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -379,6 +411,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Recruiter summary",
         "https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/olist-ecommerce-analysis/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -413,6 +449,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Recruiter summary",
         "https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/cyclistic-rider-behaviour-analysis/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   },
@@ -447,6 +487,10 @@ window.MULERO_PROJECT_FALLBACK = [
       [
         "Recruiter summary",
         "https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/RECRUITER_PROJECT_SUMMARY.md"
+      ],
+      [
+        "Recruiter evidence guide",
+        "https://github.com/tosinmulero/bellabeat-wellness-analysis/blob/main/docs/RECRUITER_GUIDE.md"
       ]
     ]
   }
