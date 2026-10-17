@@ -1,6 +1,44 @@
 /* Data mirrors the existing portfolio manifest and is used for offline preview. */
 window.MULERO_PROJECT_FALLBACK = [
   {
+    "slug": "fintech-product-science-lab",
+    "title": "Fintech Product Science Lab — Experimentation, Causal Inference & Retention ML",
+    "domain": "Fintech Data Science • Experimentation • Causal Inference • Machine Learning",
+    "badge": "New • Product Science • 2026",
+    "description": "Independent synthetic fintech science case studies covering A/B onboarding experiments, difference-in-differences, leakage-aware churn ML, leadership and an interactive decision lab.",
+    "metrics": [
+      [
+        "Synthetic activation difference",
+        "+3.79 pp"
+      ],
+      [
+        "Synthetic DiD estimate",
+        "+5.37 pp"
+      ],
+      [
+        "Untouched ROC AUC",
+        "0.799"
+      ],
+      [
+        "Automated tests",
+        "20 passed"
+      ]
+    ],
+    "stack": "Python • SQL • pandas • SciPy • statsmodels • scikit-learn • pytest • experimentation • causal inference",
+    "note": "Entirely synthetic, independent demonstration; not affiliated with Monzo or a financial institution and not real business outcomes.",
+    "image": "https://tosinmulero.github.io/data-analytics-portfolio/images/fintech-product-science-lab.svg",
+    "links": [
+      [
+        "Interactive case studies",
+        "https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/"
+      ],
+      [
+        "GitHub",
+        "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/product-science-lab"
+      ]
+    ]
+  },
+  {
     "slug": "nhs-primary-care-intelligence-platform",
     "title": "NHS Primary Care Data Management & Clinical Intelligence Platform",
     "domain": "Healthcare Analytics • Data Engineering • Power BI",
