@@ -47,7 +47,7 @@ async function getProjects() {
  const fallback = (window.MULERO_PROJECT_FALLBACK || []).map(normaliseProject);
  try {
   if (window.location.protocol === 'file:') return fallback;
-  const response = await fetch(DATA_PATH);
+  const response = await fetch(DATA_PATH, {cache: 'no-store'});
   if (!response.ok) throw new Error('Manifest not available');
   const manifest = await response.json();
   if (!Array.isArray(manifest.projects) || !manifest.projects.length) throw new Error('Invalid manifest');
