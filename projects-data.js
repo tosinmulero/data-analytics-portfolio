@@ -29,8 +29,8 @@ window.MULERO_PROJECT_FALLBACK = [
     "image": "https://tosinmulero.github.io/data-analytics-portfolio/images/fintech-product-science-lab.svg",
     "links": [
       [
-        "GitHub website source",
-        "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/product-science-lab"
+        "Reproducible Python & SQL",
+        "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/fintech-product-science-lab/source"
       ],
       [
         "Interactive case studies",
