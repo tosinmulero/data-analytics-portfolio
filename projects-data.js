@@ -29,15 +29,14 @@ window.MULERO_PROJECT_FALLBACK = [
     "image": "https://tosinmulero.github.io/data-analytics-portfolio/images/fintech-product-science-lab.svg",
     "links": [
       [
-        "Interactive case studies",
-        "https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/"
+        "GitHub website source",
+        "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/product-science-lab"
       ],
       [
-        "GitHub",
-        "https://github.com/tosinmulero/data-analytics-portfolio/tree/main/product-science-lab"
+        "Interactive case studies",
+        "https://tosinmulero.github.io/data-analytics-portfolio/product-science-lab/"
       ]
-    ]
-  },
+    ]  },
   {
     "slug": "nhs-primary-care-intelligence-platform",
     "title": "NHS Primary Care Data Management & Clinical Intelligence Platform",
